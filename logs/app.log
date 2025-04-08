@@ -1,0 +1,516 @@
+2025-04-07 16:20:18 [Thread-0] ERROR ru.zzz3230.activity.ActivityManager - java.io.FileNotFoundException: \\.\pipe\discord-ipc-0 (The system cannot find the file specified)
+2025-04-07 16:20:18 [Thread-0] INFO  ru.zzz3230.activity.ActivityManager - Discord is not running
+2025-04-07 16:21:44 [Thread-0] ERROR ru.zzz3230.activity.ActivityManager - java.io.FileNotFoundException: \\.\pipe\discord-ipc-0 (The system cannot find the file specified)
+2025-04-07 16:21:44 [Thread-0] INFO  ru.zzz3230.activity.ActivityManager - Discord is not running
+2025-04-07 16:22:34 [Thread-0] ERROR ru.zzz3230.activity.ActivityManager - java.io.IOException: The pipe is being closed
+2025-04-07 16:22:34 [Thread-0] INFO  ru.zzz3230.activity.ActivityManager - Discord is not running
+2025-04-07 20:41:26 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-07 20:44:07 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-07 20:44:10 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin login of 579305940990558238
+2025-04-07 20:44:10 [AWT-EventQueue-0] ERROR ru.zzz3230.tblib.client.NetworkClient - java.net.ConnectException
+2025-04-07 20:44:10 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin registering of zzz3230
+2025-04-07 20:44:10 [AWT-EventQueue-0] ERROR ru.zzz3230.tblib.client.NetworkClient - java.net.ConnectException
+2025-04-07 20:46:29 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-07 20:46:30 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin login of 579305940990558238
+2025-04-07 20:47:36 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-07 20:47:39 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin login of 579305940990558238
+2025-04-07 20:47:40 [AWT-EventQueue-0] ERROR ru.zzz3230.tblib.client.NetworkClient - java.net.ConnectException
+2025-04-07 20:47:40 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin registering of zzz3230
+2025-04-07 20:47:40 [AWT-EventQueue-0] ERROR ru.zzz3230.tblib.client.NetworkClient - java.net.ConnectException
+2025-04-07 20:47:50 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-07 20:47:51 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin login of 579305940990558238
+2025-04-07 20:48:36 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-07 22:42:16 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-07 22:42:33 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin login of 579305940990558238
+2025-04-07 22:43:27 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-07 22:43:32 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin login of 579305940990558238
+2025-04-07 22:43:32 [AWT-EventQueue-0] ERROR ru.zzz3230.tblib.client.NetworkClient - null
+2025-04-07 22:44:06 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-07 22:44:09 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin login of 579305940990558238
+2025-04-07 22:44:09 [AWT-EventQueue-0] ERROR ru.zzz3230.tblib.client.NetworkClient - null
+2025-04-07 22:44:09 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin registering of zzz3230
+2025-04-07 22:44:09 [AWT-EventQueue-0] ERROR ru.zzz3230.tblib.client.NetworkClient - java.net.ConnectException
+2025-04-07 22:44:32 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-07 22:44:43 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin login of 579305940990558238
+2025-04-07 22:51:23 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-07 22:51:25 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin login of 579305940990558238
+2025-04-07 22:51:30 [AWT-EventQueue-0] ERROR ru.zzz3230.tblib.client.NetworkClient - request timed out
+2025-04-07 22:51:30 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin registering of zzz3230
+2025-04-07 22:52:20 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-07 22:52:25 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin login of 579305940990558238
+2025-04-07 22:52:25 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/generate_token
+2025-04-07 22:52:25 [AWT-EventQueue-0] ERROR ru.zzz3230.tblib.client.NetworkClient - null
+2025-04-07 22:52:25 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin registering of zzz3230
+2025-04-07 22:52:25 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/register_via_discord
+2025-04-07 22:52:25 [AWT-EventQueue-0] ERROR ru.zzz3230.tblib.client.NetworkClient - java.net.ConnectException
+2025-04-07 22:53:31 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-07 22:53:34 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin login of 579305940990558238
+2025-04-07 22:53:34 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/generate_token
+2025-04-07 22:53:39 [AWT-EventQueue-0] ERROR ru.zzz3230.tblib.client.NetworkClient - request timed out
+2025-04-07 22:53:39 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin registering of zzz3230
+2025-04-07 22:53:39 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/register_via_discord
+2025-04-07 22:58:11 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-07 22:58:13 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin login of 579305940990558238
+2025-04-07 22:58:13 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/generate_token
+2025-04-07 22:58:18 [AWT-EventQueue-0] ERROR ru.zzz3230.tblib.client.NetworkClient - java.net.http.HttpTimeoutException: request timed out
+2025-04-07 22:58:18 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin registering of zzz3230
+2025-04-07 22:58:18 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/register_via_discord
+2025-04-07 22:58:23 [AWT-EventQueue-0] ERROR ru.zzz3230.tblib.client.NetworkClient - request timed out
+2025-04-07 23:07:51 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-07 23:07:54 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin login of 579305940990558238
+2025-04-07 23:07:54 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/generate_token
+2025-04-07 23:07:59 [AWT-EventQueue-0] ERROR ru.zzz3230.tblib.client.NetworkClient - java.util.concurrent.TimeoutException
+2025-04-07 23:07:59 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin registering of zzz3230
+2025-04-07 23:07:59 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/register_via_discord
+2025-04-07 23:09:59 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-07 23:10:01 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin login of 579305940990558238
+2025-04-07 23:10:01 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/generate_token
+2025-04-07 23:10:02 [AWT-EventQueue-0] WARN  ru.zzz3230.tblib.client.NetworkClient - Server returned status: 405
+2025-04-07 23:16:06 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-07 23:16:09 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin login of 579305940990558238
+2025-04-07 23:16:09 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/generate_token
+2025-04-07 23:16:09 [AWT-EventQueue-0] WARN  ru.zzz3230.tblib.client.NetworkClient - Server returned status: 405
+2025-04-07 23:18:59 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-07 23:19:01 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin login of 579305940990558238
+2025-04-07 23:19:01 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/generate_token
+2025-04-07 23:19:01 [AWT-EventQueue-0] WARN  ru.zzz3230.tblib.client.NetworkClient - Server returned status: 405
+2025-04-07 23:20:36 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-07 23:20:38 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin login of 579305940990558238
+2025-04-07 23:20:38 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/generate_token
+2025-04-07 23:20:38 [AWT-EventQueue-0] WARN  ru.zzz3230.tblib.client.NetworkClient - Server returned status: 400
+2025-04-07 23:20:38 [AWT-EventQueue-0] DEBUG ru.zzz3230.tblib.client.NetworkClient - Error response: bad username/integrationTag
+2025-04-07 23:21:38 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-07 23:21:40 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin login of 579305940990558238
+2025-04-07 23:21:40 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/generate_token
+2025-04-07 23:21:40 [AWT-EventQueue-0] WARN  ru.zzz3230.tblib.client.NetworkClient - Server returned status: 400
+2025-04-07 23:21:40 [AWT-EventQueue-0] DEBUG ru.zzz3230.tblib.client.NetworkClient - Error response: bad username/integrationTag
+2025-04-07 23:21:40 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin registering of zzz3230
+2025-04-07 23:21:40 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/register_via_discord
+2025-04-07 23:24:45 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-07 23:24:48 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin login of 579305940990558238
+2025-04-07 23:24:48 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/generate_token
+2025-04-07 23:24:48 [AWT-EventQueue-0] WARN  ru.zzz3230.tblib.client.NetworkClient - Server returned status: 400
+2025-04-07 23:24:48 [AWT-EventQueue-0] DEBUG ru.zzz3230.tblib.client.NetworkClient - Error response: bad username/integrationTag
+2025-04-07 23:24:48 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Starting registration for zzz3230
+2025-04-07 23:24:48 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/register_via_discord
+2025-04-07 23:24:48 [AWT-EventQueue-0] WARN  ru.zzz3230.tblib.client.NetworkClient - Registration failed. Status code: 400
+2025-04-07 23:24:48 [AWT-EventQueue-0] DEBUG ru.zzz3230.tblib.client.NetworkClient - Error response: Bad avatar
+2025-04-07 23:26:14 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-07 23:26:16 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin login of 579305940990558238
+2025-04-07 23:26:16 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/generate_token
+2025-04-07 23:26:16 [AWT-EventQueue-0] WARN  ru.zzz3230.tblib.client.NetworkClient - Server returned status: 400
+2025-04-07 23:26:16 [AWT-EventQueue-0] DEBUG ru.zzz3230.tblib.client.NetworkClient - Error response: bad username/integrationTag
+2025-04-07 23:26:16 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Starting registration for zzz3230
+2025-04-07 23:26:16 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/register_via_discord
+2025-04-07 23:26:21 [AWT-EventQueue-0] ERROR ru.zzz3230.tblib.client.NetworkClient - Network error during registration: 
+java.net.SocketTimeoutException: Read timed out
+	at sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:278) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:304) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.net.Socket$SocketInputStream.implRead(Socket.java:1116) ~[?:?]
+	at java.net.Socket$SocketInputStream.read(Socket.java:1103) ~[?:?]
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:291) ~[?:?]
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:347) ~[?:?]
+	at java.io.BufferedInputStream.implRead(BufferedInputStream.java:420) ~[?:?]
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:399) ~[?:?]
+	at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:827) ~[?:?]
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:759) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1706) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1615) ~[?:?]
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:531) ~[?:?]
+	at ru.zzz3230.tblib.client.NetworkClient.discordRegister(NetworkClient.java:65) ~[main/:?]
+	at ru.zzz3230.tetris.controller.MainMenuController.lambda$new$0(MainMenuController.java:55) ~[main/:?]
+	at ru.zzz3230.tetris.swingUi.MainMenuForm.lambda$showWelcomeDialog$1(MainMenuForm.java:60) ~[main/:?]
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972) ~[?:?]
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314) ~[?:?]
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407) ~[?:?]
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262) ~[?:?]
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279) ~[?:?]
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:297) ~[?:?]
+	at java.awt.Component.processMouseEvent(Component.java:6621) ~[?:?]
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3404) ~[?:?]
+	at java.awt.Component.processEvent(Component.java:6386) ~[?:?]
+	at java.awt.Container.processEvent(Container.java:2266) ~[?:?]
+	at java.awt.Component.dispatchEventImpl(Component.java:4996) ~[?:?]
+	at java.awt.Container.dispatchEventImpl(Container.java:2324) ~[?:?]
+	at java.awt.Component.dispatchEvent(Component.java:4828) ~[?:?]
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4948) ~[?:?]
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4575) ~[?:?]
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4516) ~[?:?]
+	at java.awt.Container.dispatchEventImpl(Container.java:2310) ~[?:?]
+	at java.awt.Window.dispatchEventImpl(Window.java:2780) ~[?:?]
+	at java.awt.Component.dispatchEvent(Component.java:4828) ~[?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:775) [?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:720) [?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:714) [?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:400) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:98) ~[?:?]
+	at java.awt.EventQueue$5.run(EventQueue.java:747) ~[?:?]
+	at java.awt.EventQueue$5.run(EventQueue.java:745) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:400) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87) ~[?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:744) ~[?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:117) ~[?:?]
+	at java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:191) ~[?:?]
+	at java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:236) ~[?:?]
+	at java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:234) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:319) [?:?]
+	at java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:234) ~[?:?]
+	at java.awt.Dialog.show(Dialog.java:1079) ~[?:?]
+	at java.awt.Component.show(Component.java:1728) ~[?:?]
+	at java.awt.Component.setVisible(Component.java:1675) ~[?:?]
+	at java.awt.Window.setVisible(Window.java:1036) ~[?:?]
+	at java.awt.Dialog.setVisible(Dialog.java:1015) ~[?:?]
+	at ru.zzz3230.tetris.swingUi.MainMenuForm.lambda$showWelcomeDialog$4(MainMenuForm.java:75) ~[main/:?]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318) ~[?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:720) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:714) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:400) [?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87) [?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:742) [?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) [?:?]
+2025-04-07 23:27:22 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-07 23:27:24 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin login of 579305940990558238
+2025-04-07 23:27:24 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/generate_token
+2025-04-07 23:27:24 [AWT-EventQueue-0] ERROR ru.zzz3230.tblib.client.NetworkClient - Request failed: 
+java.net.ConnectException: Connection refused: getsockopt
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:682) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592) ~[?:?]
+	at java.net.Socket.connect(Socket.java:760) ~[?:?]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[?:?]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:280) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:386) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:408) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1310) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1243) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1129) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1058) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1460) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1423) ~[?:?]
+	at ru.zzz3230.tblib.client.NetworkClient.discordLogin(NetworkClient.java:116) ~[main/:?]
+	at ru.zzz3230.tetris.controller.MainMenuController.lambda$new$0(MainMenuController.java:53) ~[main/:?]
+	at ru.zzz3230.tetris.swingUi.MainMenuForm.lambda$showWelcomeDialog$1(MainMenuForm.java:60) ~[main/:?]
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972) ~[?:?]
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314) ~[?:?]
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407) ~[?:?]
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262) ~[?:?]
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279) ~[?:?]
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:297) ~[?:?]
+	at java.awt.Component.processMouseEvent(Component.java:6621) ~[?:?]
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3404) ~[?:?]
+	at java.awt.Component.processEvent(Component.java:6386) ~[?:?]
+	at java.awt.Container.processEvent(Container.java:2266) ~[?:?]
+	at java.awt.Component.dispatchEventImpl(Component.java:4996) ~[?:?]
+	at java.awt.Container.dispatchEventImpl(Container.java:2324) ~[?:?]
+	at java.awt.Component.dispatchEvent(Component.java:4828) ~[?:?]
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4948) ~[?:?]
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4575) ~[?:?]
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4516) ~[?:?]
+	at java.awt.Container.dispatchEventImpl(Container.java:2310) ~[?:?]
+	at java.awt.Window.dispatchEventImpl(Window.java:2780) ~[?:?]
+	at java.awt.Component.dispatchEvent(Component.java:4828) ~[?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:775) [?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:720) [?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:714) [?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:400) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:98) ~[?:?]
+	at java.awt.EventQueue$5.run(EventQueue.java:747) ~[?:?]
+	at java.awt.EventQueue$5.run(EventQueue.java:745) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:400) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87) ~[?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:744) ~[?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:117) ~[?:?]
+	at java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:191) ~[?:?]
+	at java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:236) ~[?:?]
+	at java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:234) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:319) [?:?]
+	at java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:234) ~[?:?]
+	at java.awt.Dialog.show(Dialog.java:1079) ~[?:?]
+	at java.awt.Component.show(Component.java:1728) ~[?:?]
+	at java.awt.Component.setVisible(Component.java:1675) ~[?:?]
+	at java.awt.Window.setVisible(Window.java:1036) ~[?:?]
+	at java.awt.Dialog.setVisible(Dialog.java:1015) ~[?:?]
+	at ru.zzz3230.tetris.swingUi.MainMenuForm.lambda$showWelcomeDialog$4(MainMenuForm.java:75) ~[main/:?]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318) ~[?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:720) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:714) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:400) [?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87) [?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:742) [?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) [?:?]
+2025-04-07 23:27:24 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Starting registration for zzz3230
+2025-04-07 23:27:24 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/register_via_discord
+2025-04-07 23:27:24 [AWT-EventQueue-0] ERROR ru.zzz3230.tblib.client.NetworkClient - Network error during registration: 
+java.net.ConnectException: Connection refused: getsockopt
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:682) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592) ~[?:?]
+	at java.net.Socket.connect(Socket.java:760) ~[?:?]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[?:?]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:280) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:386) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:408) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1310) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1243) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1129) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1058) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1460) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1423) ~[?:?]
+	at ru.zzz3230.tblib.client.NetworkClient.discordRegister(NetworkClient.java:59) ~[main/:?]
+	at ru.zzz3230.tetris.controller.MainMenuController.lambda$new$0(MainMenuController.java:55) ~[main/:?]
+	at ru.zzz3230.tetris.swingUi.MainMenuForm.lambda$showWelcomeDialog$1(MainMenuForm.java:60) ~[main/:?]
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972) ~[?:?]
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314) ~[?:?]
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407) ~[?:?]
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262) ~[?:?]
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279) ~[?:?]
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:297) ~[?:?]
+	at java.awt.Component.processMouseEvent(Component.java:6621) ~[?:?]
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3404) ~[?:?]
+	at java.awt.Component.processEvent(Component.java:6386) ~[?:?]
+	at java.awt.Container.processEvent(Container.java:2266) ~[?:?]
+	at java.awt.Component.dispatchEventImpl(Component.java:4996) ~[?:?]
+	at java.awt.Container.dispatchEventImpl(Container.java:2324) ~[?:?]
+	at java.awt.Component.dispatchEvent(Component.java:4828) ~[?:?]
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4948) ~[?:?]
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4575) ~[?:?]
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4516) ~[?:?]
+	at java.awt.Container.dispatchEventImpl(Container.java:2310) ~[?:?]
+	at java.awt.Window.dispatchEventImpl(Window.java:2780) ~[?:?]
+	at java.awt.Component.dispatchEvent(Component.java:4828) ~[?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:775) [?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:720) [?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:714) [?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:400) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:98) ~[?:?]
+	at java.awt.EventQueue$5.run(EventQueue.java:747) ~[?:?]
+	at java.awt.EventQueue$5.run(EventQueue.java:745) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:400) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87) ~[?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:744) ~[?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:117) ~[?:?]
+	at java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:191) ~[?:?]
+	at java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:236) ~[?:?]
+	at java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:234) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:319) [?:?]
+	at java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:234) ~[?:?]
+	at java.awt.Dialog.show(Dialog.java:1079) ~[?:?]
+	at java.awt.Component.show(Component.java:1728) ~[?:?]
+	at java.awt.Component.setVisible(Component.java:1675) ~[?:?]
+	at java.awt.Window.setVisible(Window.java:1036) ~[?:?]
+	at java.awt.Dialog.setVisible(Dialog.java:1015) ~[?:?]
+	at ru.zzz3230.tetris.swingUi.MainMenuForm.lambda$showWelcomeDialog$4(MainMenuForm.java:75) ~[main/:?]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318) ~[?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:720) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:714) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:400) [?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87) [?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:742) [?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) [?:?]
+2025-04-07 23:30:45 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-07 23:30:48 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin login of 579305940990558238
+2025-04-07 23:30:48 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/generate_token
+2025-04-07 23:30:49 [AWT-EventQueue-0] WARN  ru.zzz3230.tblib.client.NetworkClient - Server returned status: 400
+2025-04-07 23:30:49 [AWT-EventQueue-0] DEBUG ru.zzz3230.tblib.client.NetworkClient - Error response: bad username/integrationTag
+2025-04-07 23:30:49 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Starting registration for zzz3230
+2025-04-07 23:30:49 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/register_via_discord
+2025-04-07 23:30:50 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Registration successful for zzz3230
+2025-04-07 23:30:50 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin login of 579305940990558238
+2025-04-07 23:30:50 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/generate_token
+2025-04-07 23:32:10 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-07 23:32:12 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin login of 579305940990558238
+2025-04-07 23:32:12 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/generate_token
+2025-04-07 23:32:12 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin login of 579305940990558238
+2025-04-07 23:32:12 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/generate_token
+2025-04-07 23:32:12 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin getting info by eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA0MzUzMiwiZXhwIjoxNzQ2NjM1NTMyLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.mQMDMw4M8jr5vcz48XsS7GYClaQUMfdKlIKFxbbJZT4
+2025-04-07 23:32:12 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/info
+2025-04-07 23:35:12 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-07 23:35:15 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin login of 579305940990558238
+2025-04-07 23:35:15 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/generate_token
+2025-04-07 23:35:15 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin login of 579305940990558238
+2025-04-07 23:35:15 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/generate_token
+2025-04-07 23:35:15 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA0MzcxNSwiZXhwIjoxNzQ2NjM1NzE1LCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.tI3P8O2eW3ixMdoohi4SEZjt6Q3XJIiZjKN9ntwEKsA
+2025-04-07 23:35:15 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/info
+2025-04-07 23:53:24 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-07 23:53:27 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/avatar?aid=4
+2025-04-07 23:53:27 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin login of 579305940990558238
+2025-04-07 23:53:27 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/generate_token
+2025-04-07 23:53:27 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA0NDgwNywiZXhwIjoxNzQ2NjM2ODA3LCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.lD00p4veep4QPXyLqRqfGKwVGl9Vd7_bbKRFOcQlPus
+2025-04-07 23:53:27 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/info
+2025-04-08 00:00:52 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-08 00:00:58 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin login of 579305940990558238
+2025-04-08 00:00:58 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/generate_token
+2025-04-08 00:01:00 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA0NTI2MCwiZXhwIjoxNzQ2NjM3MjYwLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.8fIy9_r_96hGDlp-oDKYl8TlG00TyNzcb7nSyJQF0xw
+2025-04-08 00:01:00 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/info
+2025-04-08 00:04:42 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-08 00:04:45 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin login of 579305940990558238
+2025-04-08 00:04:45 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/generate_token
+2025-04-08 00:04:45 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA0NTQ4NSwiZXhwIjoxNzQ2NjM3NDg1LCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.x-UI-KicxaK1-y1ExGRWd2R5xHKertEIcpIDxlRh4Pc
+2025-04-08 00:04:45 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/info
+2025-04-08 00:04:58 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-08 00:05:00 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin login of 579305940990558238
+2025-04-08 00:05:00 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/generate_token
+2025-04-08 00:05:00 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA0NTUwMCwiZXhwIjoxNzQ2NjM3NTAwLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.jBgVshiSxUyoJF-M_ZSiJndhIV9PLxjecd6-zdwaC6Y
+2025-04-08 00:05:00 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/info
+2025-04-08 00:05:12 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-08 00:05:17 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin login of 579305940990558238
+2025-04-08 00:05:17 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/generate_token
+2025-04-08 00:05:17 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA0NTUxNywiZXhwIjoxNzQ2NjM3NTE3LCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.i_f6G53APhyKBb7isg6gT8JAiBdncUQJinhIF61OqR8
+2025-04-08 00:05:17 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/info
+2025-04-08 00:06:02 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-08 00:06:04 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin login of 579305940990558238
+2025-04-08 00:06:04 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/generate_token
+2025-04-08 00:06:04 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA0NTU2NCwiZXhwIjoxNzQ2NjM3NTY0LCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.Sw0uzWRFp2g83Awmb0u9j8G4Fc3vHcQBg6Xw9fLtWks
+2025-04-08 00:06:04 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/info
+2025-04-08 00:06:44 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-08 00:06:47 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin login of 1090919751309590588
+2025-04-08 00:06:47 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/generate_token
+2025-04-08 00:06:47 [AWT-EventQueue-0] WARN  ru.zzz3230.tblib.client.NetworkClient - Login failed. Status code: 400
+2025-04-08 00:06:47 [AWT-EventQueue-0] DEBUG ru.zzz3230.tblib.client.NetworkClient - Error response: bad username/integrationTag
+2025-04-08 00:06:47 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Starting registration for felix_o_felix
+2025-04-08 00:06:47 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/register_via_discord
+2025-04-08 00:06:47 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Registration successful for felix_o_felix
+2025-04-08 00:06:47 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin login of 1090919751309590588
+2025-04-08 00:06:47 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/generate_token
+2025-04-08 00:06:47 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjUiLCJ1c2VybmFtZSI6ImZlbGl4X29fZmVsaXgiLCJuYmYiOjE3NDQwNDU2MDcsImV4cCI6MTc0NjYzNzYwNywiaXNzIjoiVGItTWFzdGVyLVNlcnZlciIsImF1ZCI6IkFueS1DbGllbnQifQ.l5q_pJngDbv2y6R7j_Mu-q4FGULn--SmDFVHVd3XNuc
+2025-04-08 00:06:47 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/info
+2025-04-08 00:06:47 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/avatar?aid=5
+2025-04-08 11:18:43 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-08 11:23:53 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-08 11:25:52 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-08 11:25:54 [AWT-EventQueue-0] ERROR ru.zzz3230.tblib.client.LocalClient - Invalid local auth data, recreating
+2025-04-08 11:25:54 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin login of 579305940990558238
+2025-04-08 11:25:54 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/generate_token
+2025-04-08 11:25:58 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4NjM1OCwiZXhwIjoxNzQ2Njc4MzU4LCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.lLF0QiloF45cQ6IXyV6Sxi5l9-DMlFS0PbJNLllbw9I
+2025-04-08 11:25:58 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/info
+2025-04-08 11:26:29 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-08 11:26:31 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-08 11:26:31 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4NjM1OCwiZXhwIjoxNzQ2Njc4MzU4LCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.lLF0QiloF45cQ6IXyV6Sxi5l9-DMlFS0PbJNLllbw9I
+2025-04-08 11:26:31 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/info
+2025-04-08 11:35:41 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-08 11:35:42 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-08 11:35:42 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4NjM1OCwiZXhwIjoxNzQ2Njc4MzU4LCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.lLF0QiloF45cQ6IXyV6Sxi5l9-DMlFS0PbJNLllbw9I
+2025-04-08 11:35:42 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/info
+2025-04-08 11:36:28 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-08 11:36:32 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Begin login of 579305940990558238
+2025-04-08 11:36:32 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/generate_token
+2025-04-08 11:36:33 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-08 11:36:33 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/info
+2025-04-08 12:52:31 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-08 12:52:32 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-08 12:52:32 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-08 12:52:32 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/info
+2025-04-08 12:52:37 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching leaderboard for: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-08 12:52:37 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/app/tetris/get_leaderboard?scope=world
+2025-04-08 13:00:42 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-08 13:00:43 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-08 13:00:43 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-08 13:00:43 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/info
+2025-04-08 13:00:45 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching leaderboard for: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-08 13:00:45 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/app/tetris/get_leaderboard?scope=world
+2025-04-08 13:00:47 [Thread-1] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-08 13:00:52 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching leaderboard for: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-08 13:00:52 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/app/tetris/get_leaderboard?scope=world
+2025-04-08 13:00:58 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching leaderboard for: {"players":[{"username":"zzz3230_0","score":222,"date":"2025-04-08T05:18:54.9576822","aid":3}]}
+2025-04-08 13:00:58 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/app/tetris/get_leaderboard?scope=world
+2025-04-08 13:00:58 [AWT-EventQueue-0] WARN  ru.zzz3230.tblib.client.NetworkClient - Request failed. Status code: 401
+2025-04-08 13:07:18 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-08 13:07:19 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-08 13:07:19 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-08 13:07:19 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/info
+2025-04-08 13:07:21 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching leaderboard for: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-08 13:07:21 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/app/tetris/get_leaderboard?scope=world
+2025-04-08 13:07:23 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching leaderboard for: {"players":[{"username":"zzz3230_0","score":222,"date":"2025-04-08T05:18:54.9576822","aid":3}]}
+2025-04-08 13:07:23 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/app/tetris/get_leaderboard?scope=world
+2025-04-08 13:07:23 [AWT-EventQueue-0] WARN  ru.zzz3230.tblib.client.NetworkClient - Request failed. Status code: 401
+2025-04-08 13:07:24 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching leaderboard for: {"players":[{"username":"zzz3230_0","score":222,"date":"2025-04-08T05:18:54.9576822","aid":3}]}
+2025-04-08 13:07:24 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/app/tetris/get_leaderboard?scope=world
+2025-04-08 13:07:24 [AWT-EventQueue-0] WARN  ru.zzz3230.tblib.client.NetworkClient - Request failed. Status code: 401
+2025-04-08 13:08:13 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching leaderboard for: {"players":[{"username":"zzz3230_0","score":222,"date":"2025-04-08T05:18:54.9576822","aid":3}]}
+2025-04-08 13:08:13 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/app/tetris/get_leaderboard?scope=world
+2025-04-08 13:08:13 [AWT-EventQueue-0] WARN  ru.zzz3230.tblib.client.NetworkClient - Request failed. Status code: 401
+2025-04-08 13:10:05 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-08 13:10:05 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-08 13:10:05 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-08 13:10:05 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/info
+2025-04-08 13:10:07 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching leaderboard for: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-08 13:10:07 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/app/tetris/get_leaderboard?scope=world
+2025-04-08 13:10:09 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching leaderboard for: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-08 13:10:09 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/app/tetris/get_leaderboard?scope=world
+2025-04-08 13:10:12 [Thread-1] INFO  ru.zzz3230.tblib.client.NetworkClient - Starting game finished with 0
+2025-04-08 13:10:12 [Thread-1] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/app/tetris/game_finished
+2025-04-08 13:10:12 [Thread-1] WARN  ru.zzz3230.tblib.client.NetworkClient - Game finished failed. Status code: 401
+2025-04-08 13:11:17 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-08 13:11:18 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-08 13:11:18 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-08 13:11:18 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/info
+2025-04-08 13:13:05 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-08 13:13:06 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-08 13:13:06 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-08 13:13:06 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/info
+2025-04-08 13:13:36 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-08 13:13:37 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-08 13:13:37 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-08 13:13:37 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/info
+2025-04-08 13:15:25 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-08 13:15:26 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-08 13:15:26 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-08 13:15:26 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/info
+2025-04-08 13:15:44 [Thread-1] INFO  ru.zzz3230.tblib.client.NetworkClient - Starting game finished with 164
+2025-04-08 13:15:44 [Thread-1] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/app/tetris/game_finished
+2025-04-08 13:15:44 [Thread-1] WARN  ru.zzz3230.tblib.client.NetworkClient - Game finished failed. Status code: 401
+2025-04-08 13:16:42 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: http://127.0.0.1:44425
+2025-04-08 13:16:43 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-08 13:16:43 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-08 13:16:43 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/account/info
+2025-04-08 13:16:59 [Thread-1] INFO  ru.zzz3230.tblib.client.NetworkClient - Starting game finished with 137
+2025-04-08 13:16:59 [Thread-1] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/app/tetris/game_finished
+2025-04-08 13:16:59 [Thread-1] INFO  ru.zzz3230.tblib.client.NetworkClient - Game finished successful for ???
+2025-04-08 13:17:08 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching leaderboard for: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-08 13:17:08 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/app/tetris/get_leaderboard?scope=world
+2025-04-08 13:19:00 [Thread-5] INFO  ru.zzz3230.tblib.client.NetworkClient - Starting game finished with 681
+2025-04-08 13:19:00 [Thread-5] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/app/tetris/game_finished
+2025-04-08 13:19:00 [Thread-5] INFO  ru.zzz3230.tblib.client.NetworkClient - Game finished successful for ???
+2025-04-08 13:19:04 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching leaderboard for: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-08 13:19:04 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url http://127.0.0.1:44425/api/app/tetris/get_leaderboard?scope=world
+2025-04-08 20:55:32 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: https://web.tbhello.ru
+2025-04-08 20:55:33 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-08 20:55:33 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-08 20:55:33 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/account/info
+2025-04-08 20:55:39 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching leaderboard for: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-08 20:55:39 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/app/tetris/get_leaderboard?scope=world

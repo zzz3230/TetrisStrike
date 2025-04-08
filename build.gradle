@@ -1,0 +1,70 @@
+plugins {
+    id 'java'
+    id 'edu.sc.seis.launch4j' version '3.0.6'
+}
+
+group = 'ru.zzz3230'
+version = '1.0-SNAPSHOT'
+
+
+tasks.register('runJar', JavaExec) {
+    mainClass = 'ru.zzz3230.tetris.Main' // Укажите свой главный класс
+    classpath = sourceSets.main.runtimeClasspath
+    jvmArgs = [
+            "--add-exports=java.base/java.lang=ALL-UNNAMED",
+            "--add-exports=java.desktop/sun.awt=ALL-UNNAMED",
+            "--add-exports=java.desktop/sun.java2d=ALL-UNNAMED"
+    ]
+}
+
+
+tasks.register('fatJar', Jar) {
+    manifest {
+        attributes 'Implementation-Title': 'Gradle Jar File Example',
+                'Implementation-Version': version,
+                'Main-Class': 'ru.zzz3230.tetris.Main'
+    }
+    archiveBaseName = project.name + '-all'
+
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
+    from { configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+
+launch4j {
+    outfile = "tetris.exe"
+    mainClassName = "ru.zzz3230.tetris.Main"
+    jvmOptions = [
+            "--add-exports=java.base/java.lang=ALL-UNNAMED",
+            "--add-exports=java.desktop/sun.awt=ALL-UNNAMED",
+            "--add-exports=java.desktop/sun.java2d=ALL-UNNAMED"
+    ]
+}
+
+repositories {
+    mavenCentral()
+    flatDir dirs: "${rootDir}/lib"
+    maven { url "https://jogamp.org/deployment/maven" }
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation 'com.intellij:forms_rt:7.0.3'
+    implementation 'io.github.vincenzopalazzo:material-ui-swing:1.1.2'
+    implementation 'org.jogamp.gluegen:gluegen-rt-main:2.4.0'
+    implementation 'org.jogamp.jogl:jogl-all-main:2.4.0'
+    implementation 'com.google.code.gson:gson:2.12.1'
+    implementation 'com.github.JnCrMx:discord-game-sdk4j:v1.0.0'
+    implementation 'org.apache.logging.log4j:log4j-api:2.20.0'
+    implementation 'org.apache.logging.log4j:log4j-core:2.20.0'
+    implementation 'org.apache.logging.log4j:log4j-slf4j-impl:2.20.0'
+}
+
+test {
+    useJUnitPlatform()
+}
+
