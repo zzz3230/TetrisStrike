@@ -2,6 +2,7 @@ package ru.zzz3230.tetris.swingUi;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.Arrays;
 
 class SwingGamePanel extends JPanel {
     private final int rows;
@@ -13,12 +14,21 @@ class SwingGamePanel extends JPanel {
         this.rows = rows;
         this.cols = cols;
         this.field = new Color[rows][cols];
+        clear();
         // Для корректной отрисовки используем двойную буферизацию
         setDoubleBuffered(true);
     }
 
     public void setCellColor(int row, int col, Color color) {
         field[row][col] = color;
+    }
+
+    public void clear(){
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                field[i][j] = new Color(0x0, true);
+            }
+        }
     }
 
     @Override

@@ -17,22 +17,21 @@ import ru.zzz3230.tetris.utils.Utils;
 
 import com.jogamp.opengl.util.texture.TextureIO;
 import com.jogamp.opengl.util.texture.Texture;
-import javax.imageio.ImageIO;
+
 import javax.swing.*;
 import java.awt.*;
-import java.awt.image.BufferedImage;
 import java.io.IOException;
-import java.nio.Buffer;
 import java.nio.ByteBuffer;
 import java.nio.FloatBuffer;
 import java.nio.IntBuffer;
 import java.util.Arrays;
-import java.util.LinkedList;
 import java.util.Objects;
 import java.util.concurrent.ConcurrentLinkedDeque;
 
-public class OpenGLSwingExample extends JPanel implements GLEventListener {
-    private static final Logger log = LoggerFactory.getLogger(OpenGLSwingExample.class);
+public class OpenGLSwingPanel extends JPanel implements GLEventListener {
+    private static final Logger log = LoggerFactory.getLogger(OpenGLSwingPanel.class);
+    private final int rows;
+    private final int columns;
     private GLCanvas canvas;
     private int shaderProgram;
     private int vao;
@@ -43,6 +42,9 @@ public class OpenGLSwingExample extends JPanel implements GLEventListener {
 
     private int texCellID;
     private int texPatternID;
+    private int texFailID;
+
+    private int failStartID;
 
     private int waveStartCellID;
     private int waveStartID;
@@ -54,37 +56,15 @@ public class OpenGLSwingExample extends JPanel implements GLEventListener {
 
     private int texFallingID;
 
-    private int lastTextureIndex = 0;
-
     private final long startTime = System.currentTimeMillis();
 
-    private Texture patternTexure;
+    private Texture patternTexture;
     private Texture texture1;
     private Texture fallingTexture;
-
-    @Override
-    public void init(GLAutoDrawable drawable) {
-        GL3 gl = drawable.getGL().getGL3();
-
-        gl.glClearColor(0.1f, 0.1f, 0.1f, .0f);
-
-        // Вершинные данные (позиции и цвета)
-        float[] vertices = {
-                -1.0f, -1.0f,  // Нижний левый
-                3, -1.0f,  // Нижний правый (больше 1.0)
-                -1.0f,  3.0f  // Верхний левый (больше 1.0)
-        };
-
-        float[] fullscreenQuad = {
-                //  X      Y      U    V
-                -1.0f, -1.0f,  0.0f, 0.0f,  // Левый нижний угол
-                1.0f, -1.0f,  1.0f, 0.0f,  // Правый нижний угол
-                1.0f,  1.0f,  1.0f, 1.0f,  // Правый верхний угол
-                -1.0f,  1.0f,  0.0f, 1.0f   // Левый верхний угол
-        };
-        int[] indices = {0, 1, 2, 2, 3, 0};
+    private Texture failTexture;
 
 
+    private void loadShaders(GL3 gl){
         // Компиляция шейдеров
         int vertexShader = createShader(gl, GL3.GL_VERTEX_SHADER, """
             #version 300 es
@@ -106,7 +86,7 @@ public class OpenGLSwingExample extends JPanel implements GLEventListener {
         try {
             fragmentShader = createShader(gl, GL3.GL_FRAGMENT_SHADER,
                     Objects.requireNonNull(Utils.getResourceFileAsString("shaders/DefaultFragmentShader.glsl"))
-                    );
+            );
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -132,6 +112,50 @@ public class OpenGLSwingExample extends JPanel implements GLEventListener {
         // Освобождаем шейдеры после линковки
         gl.glDeleteShader(vertexShader);
         gl.glDeleteShader(fragmentShader);
+    }
+
+    private void loadShaderVariables(GL3 gl){
+        texCellID = gl.glGetUniformLocation(shaderProgram, "u_texture_0");
+        texPatternID = gl.glGetUniformLocation(shaderProgram, "u_texture_1");
+        texFallingID = gl.glGetUniformLocation(shaderProgram, "u_texture_2");
+
+        texFailID = gl.glGetUniformLocation(shaderProgram, "u_texture_fail");
+        failStartID = gl.glGetUniformLocation(shaderProgram, "u_failStart");
+
+
+        resolutionID = gl.glGetUniformLocation(shaderProgram, "u_resolution");
+        timeID = gl.glGetUniformLocation(shaderProgram, "u_time");
+
+        waveStartCellID = gl.glGetUniformLocation(shaderProgram, "u_waveStartCell");
+        waveStartID = gl.glGetUniformLocation(shaderProgram, "u_waveStart");
+        waveColorID = gl.glGetUniformLocation(shaderProgram, "u_waveColor");
+
+        destroyStartCellsID = gl.glGetUniformLocation(shaderProgram, "u_destroyStartCells");
+        destroyStartID = gl.glGetUniformLocation(shaderProgram, "u_destroyStart");
+        destroyFadeTimeID = gl.glGetUniformLocation(shaderProgram, "u_destroyFadeTime");
+
+        if(destroyStartCellsID == -1 || destroyStartID == -1 || destroyFadeTimeID == -1){
+            throw new RuntimeException("Failed to init Shader parameters");
+        }
+
+    }
+
+    private void initVertex(GL3 gl){
+        // Вершинные данные (позиции и цвета)
+        float[] vertices = {
+                -1.0f, -1.0f,  // Нижний левый
+                3, -1.0f,  // Нижний правый (больше 1.0)
+                -1.0f,  3.0f  // Верхний левый (больше 1.0)
+        };
+
+        float[] fullscreenQuad = {
+                //  X      Y      U    V
+                -1.0f, -1.0f,  0.0f, 0.0f,  // Левый нижний угол
+                1.0f, -1.0f,  1.0f, 0.0f,  // Правый нижний угол
+                1.0f,  1.0f,  1.0f, 1.0f,  // Правый верхний угол
+                -1.0f,  1.0f,  0.0f, 1.0f   // Левый верхний угол
+        };
+        int[] indices = {0, 1, 2, 2, 3, 0};
 
         // Создание VAO (Vertex Array Object)
         int[] vaoArray = new int[1];
@@ -152,8 +176,6 @@ public class OpenGLSwingExample extends JPanel implements GLEventListener {
         gl.glBindBuffer(GL.GL_ELEMENT_ARRAY_BUFFER, ebo[0]);
         gl.glBufferData(GL.GL_ELEMENT_ARRAY_BUFFER, indices.length * Integer.BYTES, IntBuffer.wrap(indices), GL.GL_STATIC_DRAW);
 
-
-
         // Включаем атрибут для координат позиции (location = 0)
         gl.glVertexAttribPointer(0, 2, GL.GL_FLOAT, false, 4 * Float.BYTES, 0);
         gl.glEnableVertexAttribArray(0);
@@ -161,56 +183,48 @@ public class OpenGLSwingExample extends JPanel implements GLEventListener {
 // Включаем атрибут для текстурных координат (location = 1)
         gl.glVertexAttribPointer(1, 2, GL.GL_FLOAT, false, 4 * Float.BYTES, 2 * Float.BYTES);
         gl.glEnableVertexAttribArray(1);
+    }
 
-        texCellID = gl.glGetUniformLocation(shaderProgram, "u_texture_0");
-        texPatternID = gl.glGetUniformLocation(shaderProgram, "u_texture_1");
-        texFallingID = gl.glGetUniformLocation(shaderProgram, "u_texture_2");
-
-
-        resolutionID = gl.glGetUniformLocation(shaderProgram, "u_resolution");
-        timeID = gl.glGetUniformLocation(shaderProgram, "u_time");
-
-        waveStartCellID = gl.glGetUniformLocation(shaderProgram, "u_waveStartCell");
-        waveStartID = gl.glGetUniformLocation(shaderProgram, "u_waveStart");
-        waveColorID = gl.glGetUniformLocation(shaderProgram, "u_waveColor");
-
-        destroyStartCellsID = gl.glGetUniformLocation(shaderProgram, "u_destroyStartCells");
-        destroyStartID = gl.glGetUniformLocation(shaderProgram, "u_destroyStart");
-        destroyFadeTimeID = gl.glGetUniformLocation(shaderProgram, "u_destroyFadeTime");
-
-        if(destroyStartCellsID == -1 || destroyStartID == -1 || destroyFadeTimeID == -1){
-            throw new RuntimeException("Failed to init Shader parameters");
-        }
-
-
-        System.out.println("texturesID = " + texturesID);
-
-        // Создание текстур
+    private Texture loadTexture(String assetName){
+        ClassLoader classLoader = ClassLoader.getSystemClassLoader();
         try {
-
-            ClassLoader classLoader = ClassLoader.getSystemClassLoader();
-            try {
-                patternTexure = TextureIO.newTexture(classLoader.getResourceAsStream("assets/tetris_gamestate.png"), false, "png");
-                fallingTexture = TextureIO.newTexture(classLoader.getResourceAsStream("assets/tetris_gamestate.png"), false, "png");
-
-                // Загрузка текстур
-                texture1 = TextureIO.newTexture(classLoader.getResourceAsStream("assets/cell.png"), false, "png");
-
-
-            } catch (IOException e) {
-                throw new RuntimeException("Error loading texture", e);
+            var stream = classLoader.getResourceAsStream(assetName);
+            if(stream == null){
+                throw new RuntimeException("Failed to load asset: " + assetName);
             }
-            if(false) throw new IOException();
+            return TextureIO.newTexture(stream, false, "png");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    private void loadTextures(){
+        patternTexture = loadTexture("assets/tetris_gamestate.png");
+        fallingTexture = loadTexture("assets/tetris_gamestate.png");
+
+        texture1 = loadTexture("assets/cell.png");
+
+        failTexture = loadTexture("assets/fail.png");
+    }
+
+    @Override
+    public void init(GLAutoDrawable drawable) {
+        GL3 gl = drawable.getGL().getGL3();
+
+        gl.glClearColor(0.1f, 0.1f, 0.1f, .0f);
+
+        loadShaders(gl);
+
+        initVertex(gl);
+
+        loadShaderVariables(gl);
+
+        loadTextures();
 
         System.out.println("Finished init");
 
         gl.glBindVertexArray(0);
     }
-    int timeUniform;
-
 
     private void updateFieldTexture(GL3 gl, GameplayField.GameplayFieldFragment field, Texture texture){
         int width = field.getCols();
@@ -243,7 +257,7 @@ public class OpenGLSwingExample extends JPanel implements GLEventListener {
                         false,
                         false,
                         false,
-                        ByteBuffer.wrap(buffer1), //Utils.convertImageToByteBuffer(buffer),
+                        ByteBuffer.wrap(buffer1),
                         null
                 )
         );
@@ -256,16 +270,13 @@ public class OpenGLSwingExample extends JPanel implements GLEventListener {
 
         if(!fieldData.isEmpty()){
 
-            updateFieldTexture(gl, fieldData.getFirst().getGameplayField().getStaticBlocks(), patternTexure);
-            updateFieldTexture(gl, fieldData.getFirst().getGameplayField().getFallingBlock(), fallingTexture);
-
-
-
+            updateFieldTexture(gl, fieldData.getFirst().gameplayField().getStaticBlocks(), patternTexture);
+            updateFieldTexture(gl, fieldData.getFirst().gameplayField().getFallingBlock(), fallingTexture);
 
             while(!fieldData.isEmpty()){
                 var dat = fieldData.pop();
-                if(dat.getEventData() instanceof MergeEventData(Point mergePoint, Color color)){
-                    gl.glUniform2f(waveStartCellID, mergePoint.y, dat.getGameplayField().getRows() - mergePoint.x - 1);
+                if(dat.eventData() instanceof MergeEventData(Point mergePoint, Color color)){
+                    gl.glUniform2f(waveStartCellID, mergePoint.y, dat.gameplayField().getRows() - mergePoint.x - 1);
                     gl.glUniform1f(waveStartID, (System.currentTimeMillis() - startTime) / 1000.0f);
                     gl.glUniform4f(waveColorID,
                             color.getRed() / 256.0f,
@@ -274,10 +285,10 @@ public class OpenGLSwingExample extends JPanel implements GLEventListener {
                             color.getAlpha() / 256.0f
                     );
                 }
-                else if(dat.getEventData() instanceof LinesClearedEventData(int[] indexes)){
+                else if(dat.eventData() instanceof LinesClearedEventData(int[] indexes)){
                     gl.glUniform1f(destroyStartID, (System.currentTimeMillis() - startTime) / 1000.0f);
                     //gl.glUniform1f(destroyFadeTimeID, 1.0f);
-                    gl.glUniform1f(destroyFadeTimeID, dat.getIterationDelay() * 2);
+                    gl.glUniform1f(destroyFadeTimeID, dat.iterationDelay() * 2);
 
                     float[] data = new float[8];
                     Arrays.fill(data, -1f);
@@ -288,19 +299,22 @@ public class OpenGLSwingExample extends JPanel implements GLEventListener {
 
                     int elementsToFill = Math.min(indexes.length, 4);
                     for(int row = 0; row < elementsToFill; row++) {
-                        data[row] = 24 - indexes[row] - 1;
+                        data[row] = rows - indexes[row] - 1;
                     }
 
                     gl.glUniform4f(destroyStartCellsID, data[0], data[1], data[2], data[3]);
                 }
-                else if(dat.getEventData() instanceof NotifyEventData(GameplayEventType type)){
+                else if(dat.eventData() instanceof NotifyEventData(GameplayEventType type)){
                     if(type == GameplayEventType.STATIC_BLOCKS_MOVED){
+                        gl.glUniform1f(destroyStartID, -1); // Disable destroy animation
+                    }
+                    else if(type == GameplayEventType.GAME_OVER){
+                        gl.glUniform1f(failStartID, (System.currentTimeMillis() - startTime) / 1000.0f);
                         gl.glUniform1f(destroyStartID, -1); // Disable destroy animation
                     }
                 }
             }
 
-            fieldDataChanged = false;
         }
 
 
@@ -309,12 +323,16 @@ public class OpenGLSwingExample extends JPanel implements GLEventListener {
         gl.glUniform1i(texCellID, 0);
 
         gl.glActiveTexture(GL3.GL_TEXTURE1);
-        patternTexure.bind(gl);
+        patternTexture.bind(gl);
         gl.glUniform1i(texPatternID, 1);
 
         gl.glActiveTexture(GL3.GL_TEXTURE2);
         fallingTexture.bind(gl);
         gl.glUniform1i(texFallingID, 2);
+
+        gl.glActiveTexture(GL3.GL_TEXTURE3);
+        failTexture.bind(gl);
+        gl.glUniform1i(texFailID, 3);
 
         gl.glUseProgram(shaderProgram);
         gl.glUniform1f(timeID,  (System.currentTimeMillis() - startTime) / 1000.0f);
@@ -342,8 +360,6 @@ public class OpenGLSwingExample extends JPanel implements GLEventListener {
         double widthCoef = canvas.getGraphicsConfiguration().getDefaultTransform().getScaleY();
         double heightCoef = canvas.getGraphicsConfiguration().getDefaultTransform().getScaleX();
 
-        //System.out.println("widthCoef = " + widthCoef + " heightCoef = " + heightCoef);
-        //gl.glViewport(0, 0, (int)(width * 1.3), (int)(height * 1.3));
         gl.glViewport(0, 0, (int)(width * widthCoef), (int)(height * heightCoef));
         this.width = width;
         this.height = height;
@@ -353,7 +369,7 @@ public class OpenGLSwingExample extends JPanel implements GLEventListener {
         source = source.replace("\r", "");
         int shader = gl.glCreateShader(type);
         String[] sources = new String[]{ source };
-        int[] lengths = new int[]{ source.length()*2 };
+        int[] lengths = new int[]{ source.length() * 2 };
         gl.glShaderSource(shader, 1, sources, lengths, 0);
         gl.glCompileShader(shader);
 
@@ -364,6 +380,7 @@ public class OpenGLSwingExample extends JPanel implements GLEventListener {
             System.err.println("Compiling error! ");
             System.err.println(gl.glGetError());
         }
+
         byte[] log = new byte[512];
         gl.glGetShaderInfoLog(shader, log.length, (int[]) null, 0, log, 0);
 
@@ -371,10 +388,12 @@ public class OpenGLSwingExample extends JPanel implements GLEventListener {
         return shader;
     }
     public GLJPanel panel;
-    public OpenGLSwingExample(int rows, int columns) {
-        //System.setProperty("jogamp.debug", "all");
+    public OpenGLSwingPanel(int rows, int columns) {
+        this.rows = rows;
+        this.columns = columns;
+
         SwingUtilities.invokeLater(() -> {
-            //GLProfile.initSingleton();
+            GLProfile.initSingleton();
 
             GLProfile profile = GLProfile.getGL2GL3();
             System.out.println(profile.getName());
@@ -382,12 +401,8 @@ public class OpenGLSwingExample extends JPanel implements GLEventListener {
             canvas = new GLCanvas(capabilities);
             canvas.addGLEventListener(this);
 
-
-            setBackground(Color.RED);
             setLayout(new BorderLayout());
 
-
-            //rootPanel.add(new JButton("Button"));
             add(canvas);
             rootAnimator = new FPSAnimator(canvas, 60);
             rootAnimator.start();
@@ -395,8 +410,12 @@ public class OpenGLSwingExample extends JPanel implements GLEventListener {
     }
     FPSAnimator rootAnimator;
 
+    public void dispose(){
+        rootAnimator.stop();
+        canvas.destroy();
+    }
+
     private final ConcurrentLinkedDeque<GameplayContext> fieldData = new ConcurrentLinkedDeque<>();
-    private boolean fieldDataChanged = false;
 
     public void setFieldData(GameplayContext context) {
         fieldData.add(context);
@@ -405,6 +424,6 @@ public class OpenGLSwingExample extends JPanel implements GLEventListener {
     @Override
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
-        canvas.repaint();
+        //canvas.repaint();
     }
 }

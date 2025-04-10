@@ -119,7 +119,7 @@ public class GameplayModel extends Observable<GameplayContext> {
             }
         }
 
-        notifyObserver(new GameplayContext(gameplayField, eventData, getScore(), getUpdateDelaySec()));
+        notifyObserver(new GameplayContext(gameplayField, eventData, getScore(), getUpdateDelaySec(), nextFallBlock));
     }
 
     public void moveFallingBlock(int dx, int dy){
@@ -160,10 +160,10 @@ public class GameplayModel extends Observable<GameplayContext> {
     }
 
     private void defaultNotify(){
-        notifyObserver(new GameplayContext(gameplayField, null, getScore(), getUpdateDelaySec()));
+        notifyObserver(new GameplayContext(gameplayField, null, getScore(), getUpdateDelaySec(), nextFallBlock));
     }
     private void gameOverNotify(){
-        notifyObserver(new GameplayContext(gameplayField, new NotifyEventData(GameplayEventType.GAME_OVER), getScore(), getUpdateDelaySec()));
+        notifyObserver(new GameplayContext(gameplayField, new NotifyEventData(GameplayEventType.GAME_OVER), getScore(), getUpdateDelaySec(), nextFallBlock));
     }
 
     public boolean isPlaying(){

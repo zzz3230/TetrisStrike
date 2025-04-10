@@ -21,7 +21,7 @@ public class Launcher {
     public static void main(String[] args) {
         File jarFile = getRunningJarFile();
         String javaBin = System.getProperty("java.home") + "/bin/java";
-        String mainClass = "ru.zzz3230.tetris.Main";  // <-- другой main
+        String mainClass = "ru.zzz3230.tetris.Main";
 
         ProcessBuilder builder = new ProcessBuilder(
                 javaBin,

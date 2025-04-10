@@ -26,6 +26,8 @@ public class LeaderboardController extends Controller {
         var page = new SwingLeaderboardPage(this);
         view = page;
 
+        activityManager.setStatus("Looking for best players");
+
         var players = clientManager.getNetworkClient().getLeaderboard(LeaderboardData.Scope.GLOBAL);
         HashMap<Integer, Image> avatars = new HashMap<>();
         for (LeaderboardEntry entry : players.players()) {

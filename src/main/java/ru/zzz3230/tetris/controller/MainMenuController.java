@@ -6,17 +6,11 @@ import ru.zzz3230.activity.ActivityManager;
 import ru.zzz3230.activity.AuthProvider;
 import ru.zzz3230.tblib.client.LocalClient;
 import ru.zzz3230.tetris.TbClientManager;
-import ru.zzz3230.tetris.model.MainMenuContext;
 import ru.zzz3230.tetris.model.MainMenuModel;
 import ru.zzz3230.tetris.swingUi.MainMenuForm;
-import ru.zzz3230.tetris.swingUi.SwingMainMenu;
-import ru.zzz3230.tetris.swingUi.SwingNavigationManager;
 import ru.zzz3230.tetris.utils.*;
 
 import java.awt.*;
-import java.awt.image.RescaleOp;
-import java.io.StringReader;
-import java.util.Locale;
 
 public class MainMenuController extends Controller {
     private static final Logger log = LoggerFactory.getLogger(MainMenuController.class);
@@ -50,6 +44,9 @@ public class MainMenuController extends Controller {
             if(!isActive()){
                 return;
             }
+            activityManager.startShowActivityIfAvailable();
+
+            activityManager.setStatus("Staying in the main menu");
 
             if(!clientManager.getNetworkClient().isOnlineAvailable()){
                 playAsOffline();

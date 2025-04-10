@@ -780,3 +780,348 @@ java.net.ConnectException: Connection refused: getsockopt
 2025-04-10 12:02:22 [Thread-1] INFO  ru.zzz3230.tblib.client.NetworkClient - Game finished successful for ???
 2025-04-10 12:02:27 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching leaderboard for: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
 2025-04-10 12:02:27 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/app/tetris/get_leaderboard?scope=world
+2025-04-10 12:11:36 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: https://web.tbhello.ru
+2025-04-10 12:11:37 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-10 12:11:37 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 12:11:37 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/account/info
+2025-04-10 12:12:02 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: https://web.tbhello.ru
+2025-04-10 12:12:03 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-10 12:12:03 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 12:12:03 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/account/info
+2025-04-10 12:13:54 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: https://web.tbhello.ru
+2025-04-10 12:13:55 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-10 12:13:55 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 12:13:55 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/account/info
+2025-04-10 12:14:59 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: https://web.tbhello.ru
+2025-04-10 12:14:59 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-10 12:14:59 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 12:14:59 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/account/info
+2025-04-10 12:16:26 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: https://web.tbhello.ru
+2025-04-10 12:16:26 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-10 12:16:26 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 12:16:26 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/account/info
+2025-04-10 13:55:47 [main] ERROR ru.zzz3230.tblib.TbConnection - Error while fetching url
+java.util.concurrent.ExecutionException: java.net.ConnectException
+	at java.util.concurrent.CompletableFuture.wrapInExecutionException(CompletableFuture.java:345) ~[?:?]
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:440) ~[?:?]
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2117) ~[?:?]
+	at ru.zzz3230.tblib.TbConnection.initialize(TbConnection.java:52) [main/:?]
+	at ru.zzz3230.tetris.TbClientManager.<init>(TbClientManager.java:14) [main/:?]
+	at ru.zzz3230.tetris.Main.main(Main.java:117) [main/:?]
+Caused by: java.net.ConnectException
+	at jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1082) ~[java.net.http:?]
+	at jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:227) ~[java.net.http:?]
+	at jdk.internal.net.http.AsyncSSLConnection.connectAsync(AsyncSSLConnection.java:56) ~[java.net.http:?]
+	at jdk.internal.net.http.Http2Connection.createAsync(Http2Connection.java:533) ~[java.net.http:?]
+	at jdk.internal.net.http.Http2ClientImpl.getConnectionFor(Http2ClientImpl.java:138) ~[java.net.http:?]
+	at jdk.internal.net.http.ExchangeImpl.get(ExchangeImpl.java:94) ~[java.net.http:?]
+	at jdk.internal.net.http.Exchange.establishExchange(Exchange.java:391) ~[java.net.http:?]
+	at jdk.internal.net.http.Exchange.responseAsyncImpl0(Exchange.java:584) ~[java.net.http:?]
+	at jdk.internal.net.http.Exchange.responseAsyncImpl(Exchange.java:428) ~[java.net.http:?]
+	at jdk.internal.net.http.Exchange.responseAsync(Exchange.java:420) ~[java.net.http:?]
+	at jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:445) ~[java.net.http:?]
+	at jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:487) ~[java.net.http:?]
+	at java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:978) ~[?:?]
+	at java.util.concurrent.CompletableFuture.uniHandleStage(CompletableFuture.java:994) ~[?:?]
+	at java.util.concurrent.CompletableFuture.handle(CompletableFuture.java:2416) ~[?:?]
+	at jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:477) ~[java.net.http:?]
+	at jdk.internal.net.http.MultiExchange.lambda$responseAsync0$2(MultiExchange.java:365) ~[java.net.http:?]
+	at java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1194) ~[?:?]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:554) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1817) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1575) ~[?:?]
+Caused by: java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:137) ~[?:?]
+	at sun.nio.ch.Net.checkAddress(Net.java:145) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.checkRemote(SocketChannelImpl.java:929) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:952) ~[?:?]
+	at jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:210) ~[java.net.http:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:571) ~[?:?]
+	at jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:212) ~[java.net.http:?]
+	at jdk.internal.net.http.AsyncSSLConnection.connectAsync(AsyncSSLConnection.java:56) ~[java.net.http:?]
+	at jdk.internal.net.http.Http2Connection.createAsync(Http2Connection.java:533) ~[java.net.http:?]
+	at jdk.internal.net.http.Http2ClientImpl.getConnectionFor(Http2ClientImpl.java:138) ~[java.net.http:?]
+	at jdk.internal.net.http.ExchangeImpl.get(ExchangeImpl.java:94) ~[java.net.http:?]
+	at jdk.internal.net.http.Exchange.establishExchange(Exchange.java:391) ~[java.net.http:?]
+	at jdk.internal.net.http.Exchange.responseAsyncImpl0(Exchange.java:584) ~[java.net.http:?]
+	at jdk.internal.net.http.Exchange.responseAsyncImpl(Exchange.java:428) ~[java.net.http:?]
+	at jdk.internal.net.http.Exchange.responseAsync(Exchange.java:420) ~[java.net.http:?]
+	at jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:445) ~[java.net.http:?]
+	at jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:487) ~[java.net.http:?]
+	at java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:978) ~[?:?]
+	at java.util.concurrent.CompletableFuture.uniHandleStage(CompletableFuture.java:994) ~[?:?]
+	at java.util.concurrent.CompletableFuture.handle(CompletableFuture.java:2416) ~[?:?]
+	at jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:477) ~[java.net.http:?]
+	at jdk.internal.net.http.MultiExchange.lambda$responseAsync0$2(MultiExchange.java:365) ~[java.net.http:?]
+	at java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1194) ~[?:?]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:554) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1817) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1575) ~[?:?]
+2025-04-10 13:55:47 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: null
+2025-04-10 13:56:23 [Thread-0] ERROR ru.zzz3230.activity.ActivityManager - java.io.IOException: The pipe is being closed
+2025-04-10 13:56:23 [Thread-0] INFO  ru.zzz3230.activity.ActivityManager - Discord is not running
+2025-04-10 13:56:23 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-10 13:56:23 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 13:56:23 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url null/api/account/info
+2025-04-10 13:56:38 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: https://web.tbhello.ru
+2025-04-10 13:56:40 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-10 13:56:40 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 13:56:40 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/account/info
+2025-04-10 13:56:42 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching leaderboard for: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 13:56:42 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/app/tetris/get_leaderboard?scope=world
+2025-04-10 14:00:05 [Thread-1] INFO  ru.zzz3230.tblib.client.NetworkClient - Starting game finished with 750
+2025-04-10 14:00:06 [Thread-1] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/app/tetris/game_finished
+2025-04-10 14:00:06 [Thread-1] INFO  ru.zzz3230.tblib.client.NetworkClient - Game finished successful for ???
+2025-04-10 14:39:40 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: https://web.tbhello.ru
+2025-04-10 14:39:41 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-10 14:39:41 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 14:39:41 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/account/info
+2025-04-10 14:47:20 [Thread-1] INFO  ru.zzz3230.tblib.client.NetworkClient - Starting game finished with 3854
+2025-04-10 14:47:20 [Thread-1] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/app/tetris/game_finished
+2025-04-10 14:47:21 [Thread-1] INFO  ru.zzz3230.tblib.client.NetworkClient - Game finished successful for ???
+2025-04-10 14:47:33 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching leaderboard for: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 14:47:33 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/app/tetris/get_leaderboard?scope=world
+2025-04-10 14:53:27 [Thread-5] INFO  ru.zzz3230.tblib.client.NetworkClient - Starting game finished with 859
+2025-04-10 14:53:27 [Thread-5] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/app/tetris/game_finished
+2025-04-10 14:53:27 [Thread-5] INFO  ru.zzz3230.tblib.client.NetworkClient - Game finished successful for ???
+2025-04-10 15:00:56 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: https://web.tbhello.ru
+2025-04-10 15:00:58 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-10 15:00:58 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 15:00:58 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/account/info
+2025-04-10 15:13:26 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: https://web.tbhello.ru
+2025-04-10 15:13:27 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-10 15:13:27 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 15:13:27 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/account/info
+2025-04-10 15:15:39 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: https://web.tbhello.ru
+2025-04-10 15:15:40 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-10 15:15:40 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 15:15:40 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/account/info
+2025-04-10 15:21:40 [Thread-1] INFO  ru.zzz3230.tblib.client.NetworkClient - Starting game finished with 3665
+2025-04-10 15:21:40 [Thread-1] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/app/tetris/game_finished
+2025-04-10 15:21:41 [Thread-1] INFO  ru.zzz3230.tblib.client.NetworkClient - Game finished successful for ???
+2025-04-10 15:21:44 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching leaderboard for: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 15:21:44 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/app/tetris/get_leaderboard?scope=world
+2025-04-10 16:32:28 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: https://web.tbhello.ru
+2025-04-10 16:32:28 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-10 16:32:28 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 16:32:28 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/account/info
+2025-04-10 16:38:31 [Thread-1] INFO  ru.zzz3230.tblib.client.NetworkClient - Starting game finished with 3564
+2025-04-10 16:38:31 [Thread-1] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/app/tetris/game_finished
+2025-04-10 16:38:31 [Thread-1] INFO  ru.zzz3230.tblib.client.NetworkClient - Game finished successful for ???
+2025-04-10 16:38:35 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching leaderboard for: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 16:38:35 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/app/tetris/get_leaderboard?scope=world
+2025-04-10 16:40:12 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching leaderboard for: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 16:40:12 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/app/tetris/get_leaderboard?scope=world
+2025-04-10 16:41:39 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching leaderboard for: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 16:41:39 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/app/tetris/get_leaderboard?scope=world
+2025-04-10 17:49:31 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: https://web.tbhello.ru
+2025-04-10 17:49:32 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-10 17:49:32 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 17:49:32 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/account/info
+2025-04-10 17:50:28 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: https://web.tbhello.ru
+2025-04-10 17:50:29 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-10 17:50:29 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 17:50:29 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/account/info
+2025-04-10 17:51:10 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: https://web.tbhello.ru
+2025-04-10 17:51:11 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-10 17:51:11 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 17:51:11 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/account/info
+2025-04-10 17:51:44 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: https://web.tbhello.ru
+2025-04-10 17:51:45 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-10 17:51:45 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 17:51:45 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/account/info
+2025-04-10 17:52:30 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: https://web.tbhello.ru
+2025-04-10 17:52:30 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-10 17:52:30 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 17:52:30 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/account/info
+2025-04-10 17:53:54 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: https://web.tbhello.ru
+2025-04-10 17:53:55 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-10 17:53:55 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 17:53:55 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/account/info
+2025-04-10 17:54:09 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: https://web.tbhello.ru
+2025-04-10 17:54:10 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-10 17:54:10 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 17:54:10 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/account/info
+2025-04-10 17:55:34 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: https://web.tbhello.ru
+2025-04-10 17:55:35 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-10 17:55:35 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 17:55:35 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/account/info
+2025-04-10 17:55:51 [main] ERROR ru.zzz3230.tblib.TbConnection - Error while fetching url
+java.util.concurrent.ExecutionException: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.util.concurrent.CompletableFuture.wrapInExecutionException(CompletableFuture.java:345) ~[?:?]
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:440) ~[?:?]
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2117) ~[?:?]
+	at ru.zzz3230.tblib.TbConnection.initialize(TbConnection.java:52) [main/:?]
+	at ru.zzz3230.tetris.TbClientManager.<init>(TbClientManager.java:14) [main/:?]
+	at ru.zzz3230.tetris.Main.main(Main.java:117) [main/:?]
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:620) ~[java.net.http:?]
+	at jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:565) ~[java.net.http:?]
+	at jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:485) ~[java.net.http:?]
+	at java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:978) ~[?:?]
+	at java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:955) ~[?:?]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:554) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2238) ~[?:?]
+	at jdk.internal.net.http.common.SSLFlowDelegate.stopOnError(SSLFlowDelegate.java:1013) ~[java.net.http:?]
+	at java.util.concurrent.CompletableFuture.uniExceptionally(CompletableFuture.java:1034) ~[?:?]
+	at java.util.concurrent.CompletableFuture$UniExceptionally.tryFire(CompletableFuture.java:1018) ~[?:?]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:554) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2238) ~[?:?]
+	at jdk.internal.net.http.common.SubscriberWrapper$DownstreamPusher.run1(SubscriberWrapper.java:295) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SubscriberWrapper$DownstreamPusher.run(SubscriberWrapper.java:259) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:182) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SubscriberWrapper.errorCommon(SubscriberWrapper.java:421) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SSLFlowDelegate$Reader.errorCommon(SSLFlowDelegate.java:384) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SubscriberWrapper.onError(SubscriberWrapper.java:412) ~[java.net.http:?]
+	at jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadSubscription.signalCompletion(SocketTube.java:645) ~[java.net.http:?]
+	at jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:829) ~[java.net.http:?]
+	at jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233) ~[java.net.http:?]
+	at jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalError(SocketTube.java:778) ~[java.net.http:?]
+	at jdk.internal.net.http.SocketTube.signalClosed(SocketTube.java:159) ~[java.net.http:?]
+	at jdk.internal.net.http.PlainHttpConnection.close(PlainHttpConnection.java:428) ~[java.net.http:?]
+	at jdk.internal.net.http.AsyncSSLConnection.close(AsyncSSLConnection.java:116) ~[java.net.http:?]
+	at jdk.internal.net.http.Exchange$ConnectionAborter.closeConnection(Exchange.java:202) ~[java.net.http:?]
+	at jdk.internal.net.http.Exchange$ConnectionAborter.closeConnection(Exchange.java:185) ~[java.net.http:?]
+	at jdk.internal.net.http.Exchange.cancel(Exchange.java:293) ~[java.net.http:?]
+	at jdk.internal.net.http.MultiExchange.cancel(MultiExchange.java:266) ~[java.net.http:?]
+	at jdk.internal.net.http.ResponseTimerEvent.handle(ResponseTimerEvent.java:71) ~[java.net.http:?]
+	at jdk.internal.net.http.HttpClientImpl.purgeTimeoutsAndReturnNextDeadline(HttpClientImpl.java:1790) ~[java.net.http:?]
+	at jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1387) ~[java.net.http:?]
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:621) ~[java.net.http:?]
+	at jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:565) ~[java.net.http:?]
+	at jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:485) ~[java.net.http:?]
+	at java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:978) ~[?:?]
+	at java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:955) ~[?:?]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:554) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2238) ~[?:?]
+	at jdk.internal.net.http.common.SSLFlowDelegate.stopOnError(SSLFlowDelegate.java:1013) ~[java.net.http:?]
+	at java.util.concurrent.CompletableFuture.uniExceptionally(CompletableFuture.java:1034) ~[?:?]
+	at java.util.concurrent.CompletableFuture$UniExceptionally.tryFire(CompletableFuture.java:1018) ~[?:?]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:554) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2238) ~[?:?]
+	at jdk.internal.net.http.common.SubscriberWrapper$DownstreamPusher.run1(SubscriberWrapper.java:295) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SubscriberWrapper$DownstreamPusher.run(SubscriberWrapper.java:259) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:182) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SubscriberWrapper.errorCommon(SubscriberWrapper.java:421) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SSLFlowDelegate$Reader.errorCommon(SSLFlowDelegate.java:384) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SubscriberWrapper.onError(SubscriberWrapper.java:412) ~[java.net.http:?]
+	at jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadSubscription.signalCompletion(SocketTube.java:645) ~[java.net.http:?]
+	at jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:829) ~[java.net.http:?]
+	at jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233) ~[java.net.http:?]
+	at jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalError(SocketTube.java:778) ~[java.net.http:?]
+	at jdk.internal.net.http.SocketTube.signalClosed(SocketTube.java:159) ~[java.net.http:?]
+	at jdk.internal.net.http.PlainHttpConnection.close(PlainHttpConnection.java:428) ~[java.net.http:?]
+	at jdk.internal.net.http.AsyncSSLConnection.close(AsyncSSLConnection.java:116) ~[java.net.http:?]
+	at jdk.internal.net.http.Exchange$ConnectionAborter.closeConnection(Exchange.java:202) ~[java.net.http:?]
+	at jdk.internal.net.http.Exchange$ConnectionAborter.closeConnection(Exchange.java:185) ~[java.net.http:?]
+	at jdk.internal.net.http.Exchange.cancel(Exchange.java:293) ~[java.net.http:?]
+	at jdk.internal.net.http.MultiExchange.cancel(MultiExchange.java:266) ~[java.net.http:?]
+	at jdk.internal.net.http.ResponseTimerEvent.handle(ResponseTimerEvent.java:71) ~[java.net.http:?]
+	at jdk.internal.net.http.HttpClientImpl.purgeTimeoutsAndReturnNextDeadline(HttpClientImpl.java:1790) ~[java.net.http:?]
+	at jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1387) ~[java.net.http:?]
+2025-04-10 17:55:51 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: null
+2025-04-10 17:55:52 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-10 17:55:52 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 17:55:52 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url null/api/account/info
+2025-04-10 17:56:01 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: https://web.tbhello.ru
+2025-04-10 17:56:05 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-10 17:56:05 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 17:56:05 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/account/info
+2025-04-10 17:56:36 [Thread-1] INFO  ru.zzz3230.tblib.client.NetworkClient - Starting game finished with 66
+2025-04-10 17:56:36 [Thread-1] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/app/tetris/game_finished
+2025-04-10 17:56:37 [Thread-1] INFO  ru.zzz3230.tblib.client.NetworkClient - Game finished successful for ???
+2025-04-10 17:57:25 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: https://web.tbhello.ru
+2025-04-10 17:57:26 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-10 17:57:26 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 17:57:26 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/account/info
+2025-04-10 17:58:11 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: https://web.tbhello.ru
+2025-04-10 17:58:12 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-10 17:58:12 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 17:58:12 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/account/info
+2025-04-10 17:58:40 [Thread-1] INFO  ru.zzz3230.tblib.client.NetworkClient - Starting game finished with 33
+2025-04-10 17:58:40 [Thread-1] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/app/tetris/game_finished
+2025-04-10 17:58:40 [Thread-1] INFO  ru.zzz3230.tblib.client.NetworkClient - Game finished successful for ???
+2025-04-10 17:59:28 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: https://web.tbhello.ru
+2025-04-10 17:59:29 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-10 17:59:29 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 17:59:29 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/account/info
+2025-04-10 17:59:47 [Thread-1] INFO  ru.zzz3230.tblib.client.NetworkClient - Starting game finished with 19
+2025-04-10 17:59:47 [Thread-1] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/app/tetris/game_finished
+2025-04-10 17:59:48 [Thread-1] INFO  ru.zzz3230.tblib.client.NetworkClient - Game finished successful for ???
+2025-04-10 18:28:33 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: https://web.tbhello.ru
+2025-04-10 18:28:34 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-10 18:28:34 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 18:28:34 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/account/info
+2025-04-10 18:28:36 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching leaderboard for: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 18:28:36 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/app/tetris/get_leaderboard?scope=world
+2025-04-10 18:57:59 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: https://web.tbhello.ru
+2025-04-10 18:58:00 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-10 18:58:00 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 18:58:00 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/account/info
+2025-04-10 19:00:14 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: https://web.tbhello.ru
+2025-04-10 19:00:14 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-10 19:00:14 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 19:00:14 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/account/info
+2025-04-10 19:08:54 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: https://web.tbhello.ru
+2025-04-10 19:10:39 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: https://web.tbhello.ru
+2025-04-10 19:10:40 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-10 19:10:40 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 19:10:40 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/account/info
+2025-04-10 19:10:47 [AWT-EventQueue-0] INFO  ru.zzz3230.tetris.swingUi.SwingGameplayForm - Gameplay attached
+2025-04-10 19:12:37 [AWT-EventQueue-0] INFO  ru.zzz3230.tetris.swingUi.SwingGameplayForm - Gameplay detached
+2025-04-10 19:12:38 [AWT-EventQueue-0] INFO  ru.zzz3230.tetris.swingUi.SwingGameplayForm - Gameplay attached
+2025-04-10 19:12:47 [AWT-EventQueue-0] INFO  ru.zzz3230.tetris.swingUi.SwingGameplayForm - Gameplay detached
+2025-04-10 19:12:47 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching leaderboard for: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 19:12:47 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/app/tetris/get_leaderboard?scope=world
+2025-04-10 19:13:03 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching leaderboard for: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 19:13:03 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/app/tetris/get_leaderboard?scope=world
+2025-04-10 19:17:44 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: https://web.tbhello.ru
+2025-04-10 19:17:44 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-10 19:17:44 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 19:17:44 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/account/info
+2025-04-10 19:18:20 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: https://web.tbhello.ru
+2025-04-10 19:18:20 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-10 19:18:20 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 19:18:20 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/account/info
+2025-04-10 19:18:22 [AWT-EventQueue-0] INFO  ru.zzz3230.tetris.swingUi.SwingGameplayForm - Gameplay attached
+2025-04-10 19:18:55 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: https://web.tbhello.ru
+2025-04-10 19:18:55 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-10 19:18:55 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 19:18:55 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/account/info
+2025-04-10 19:18:57 [AWT-EventQueue-0] INFO  ru.zzz3230.tetris.swingUi.SwingGameplayForm - Gameplay attached
+2025-04-10 19:19:31 [Thread-2] INFO  ru.zzz3230.tblib.client.NetworkClient - Starting game finished with 51
+2025-04-10 19:19:31 [Thread-2] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/app/tetris/game_finished
+2025-04-10 19:19:32 [Thread-2] INFO  ru.zzz3230.tblib.client.NetworkClient - Game finished successful for ???
+2025-04-10 19:20:23 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: https://web.tbhello.ru
+2025-04-10 19:20:23 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-10 19:20:23 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDA4Njk5MywiZXhwIjoxNzQ2Njc4OTkzLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.rwSESmMyrd0djdjcOD-O31lDqNEejDxyABnmsfMcads
+2025-04-10 19:20:23 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/account/info
+2025-04-10 19:20:25 [AWT-EventQueue-0] INFO  ru.zzz3230.tetris.swingUi.SwingGameplayForm - Gameplay attached
+2025-04-10 19:20:30 [AWT-EventQueue-0] INFO  ru.zzz3230.tetris.swingUi.SwingGameplayForm - Gameplay detached
+2025-04-10 19:20:32 [AWT-EventQueue-0] INFO  ru.zzz3230.tetris.swingUi.SwingGameplayForm - Gameplay attached
+2025-04-10 19:21:48 [Thread-2] INFO  ru.zzz3230.tblib.client.NetworkClient - Starting game finished with 47
+2025-04-10 19:21:48 [Thread-2] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/app/tetris/game_finished
+2025-04-10 19:21:48 [Thread-2] INFO  ru.zzz3230.tblib.client.NetworkClient - Game finished successful for ???
+2025-04-10 19:25:48 [Thread-6] INFO  ru.zzz3230.tblib.client.NetworkClient - Starting game finished with 2368
+2025-04-10 19:25:48 [Thread-6] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/app/tetris/game_finished
+2025-04-10 19:25:48 [Thread-6] INFO  ru.zzz3230.tblib.client.NetworkClient - Game finished successful for ???
+2025-04-10 19:26:05 [AWT-EventQueue-0] INFO  ru.zzz3230.tetris.swingUi.SwingGameplayForm - Gameplay detached

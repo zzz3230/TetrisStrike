@@ -8,6 +8,7 @@ import javax.swing.*;
 public class SwingNavigationManager implements NavigationManager {
 
     private final JFrame frame;
+    private SwingPage currentPage;
 
     public SwingNavigationManager(JFrame frame) {
         this.frame = frame;
@@ -20,10 +21,14 @@ public class SwingNavigationManager implements NavigationManager {
         }
 
         SwingUtilities.invokeLater(() ->{
+            if (currentPage != null) {
+                currentPage.onDetached(frame);
+            }
             frame.getContentPane().removeAll();
             frame.add(swingPage.getRootPanel());
             frame.setVisible(true);
             swingPage.onAttached(frame);
+            currentPage = swingPage;
         });
     }
 }

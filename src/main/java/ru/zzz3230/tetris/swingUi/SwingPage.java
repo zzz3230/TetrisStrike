@@ -7,4 +7,5 @@ import javax.swing.*;
 public interface SwingPage extends Page {
     JPanel getRootPanel();
     default void onAttached(JFrame frame){};
+    default void onDetached(JFrame frame){};
 }

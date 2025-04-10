@@ -3,19 +3,21 @@ package ru.zzz3230.tetris.swingUi;
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
 import com.intellij.uiDesigner.core.Spacer;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import ru.zzz3230.tetris.controller.GameplayController;
 import ru.zzz3230.tetris.model.gameplay.GameplayContext;
-import ru.zzz3230.tetris.swingUi.opengl.OpenGLSwingExample;
+import ru.zzz3230.tetris.swingUi.opengl.OpenGLSwingPanel;
 import ru.zzz3230.tetris.utils.Observer;
 
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
 import java.awt.*;
-import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 public class SwingGameplayForm implements SwingPage, Observer<GameplayContext> {
 
+    private static final Logger log = LoggerFactory.getLogger(SwingGameplayForm.class);
     private final GameplayController controller;
     private JButton exitButton;
     private JPanel rootPanel;
@@ -23,31 +25,34 @@ public class SwingGameplayForm implements SwingPage, Observer<GameplayContext> {
     private JPanel gameFieldPanel;
     private JPanel nextPreviewPanel;
     private JLabel scoreLabel;
+    private SwingGamePanel nextPreviewGamePanel;
 
-    private OpenGLSwingExample fieldOutput;
+    private OpenGLSwingPanel fieldOutput;
 
     public SwingGameplayForm(GameplayController controller) {
         this.controller = controller;
 
-        var panel = new OpenGLSwingExample(24, 10);
-        $$$setupUI$$$();
-        panel.setAlignmentX(Component.CENTER_ALIGNMENT);
-        panel.setAlignmentY(Component.CENTER_ALIGNMENT);
-        fieldOutput = panel;
+        SwingUtilities.invokeLater(() -> {
+            var panel = new OpenGLSwingPanel(24, 10);
+            $$$setupUI$$$();
+            panel.setAlignmentX(Component.CENTER_ALIGNMENT);
+            panel.setAlignmentY(Component.CENTER_ALIGNMENT);
+            fieldOutput = panel;
 
-        gameFieldPanel.add(panel);
+            gameFieldPanel.add(panel);
 
-        SwingGamePanel panel2 = new SwingGamePanel(4, 4);
-        panel2.setAlignmentX(Component.CENTER_ALIGNMENT);
-        panel2.setAlignmentY(Component.CENTER_ALIGNMENT);
+            nextPreviewGamePanel = new SwingGamePanel(4, 4);
+            nextPreviewGamePanel.setAlignmentX(Component.CENTER_ALIGNMENT);
+            nextPreviewGamePanel.setAlignmentY(Component.CENTER_ALIGNMENT);
 
-        nextPreviewPanel.add(panel2, BorderLayout.CENTER);
+            this.nextPreviewPanel.add(nextPreviewGamePanel, BorderLayout.CENTER);
 
-        exitButton.addActionListener(e -> {
-            controller.gotoMainMenu();
+            exitButton.addActionListener(e -> {
+                controller.gotoMainMenu();
+            });
+
+            panel.setDoubleBuffered(true);
         });
-
-        panel.setDoubleBuffered(true);
 
         timer = new Timer(20, e -> {
             controller.moveFallingBlock(0, 1);
@@ -62,11 +67,19 @@ public class SwingGameplayForm implements SwingPage, Observer<GameplayContext> {
     }
 
     @Override
+    public void onDetached(JFrame frame) {
+        log.info("Gameplay detached");
+        timer.stop();
+        fieldOutput.dispose();
+    }
+
+    @Override
     public void onAttached(JFrame frame) {
-        System.out.println("Attached");
+        log.info("Gameplay attached");
 
         TetrisKeyListener keyListener = new TetrisKeyListener(controller, timer);
-                KeyboardFocusManager.getCurrentKeyboardFocusManager().addKeyEventDispatcher(new KeyboardFocusManager() {
+
+        KeyboardFocusManager.getCurrentKeyboardFocusManager().addKeyEventDispatcher(new KeyboardFocusManager() {
             @Override
             public boolean dispatchEvent(AWTEvent e) {
                 return false;
@@ -123,112 +136,6 @@ public class SwingGameplayForm implements SwingPage, Observer<GameplayContext> {
 
             }
         });
-
-
-//        KeyboardFocusManager.getCurrentKeyboardFocusManager().addKeyEventDispatcher(new KeyboardFocusManager() {
-//            @Override
-//            public boolean dispatchEvent(AWTEvent e) {
-//                return false;
-//            }
-//
-//            @Override
-//            public boolean dispatchKeyEvent(KeyEvent e) {
-//
-//                //Q E rotate
-//                //S down
-//                //A D left right
-//
-//                if (e.getID() == KeyEvent.KEY_PRESSED) {
-//                    if(e.getKeyCode() == KeyEvent.VK_A){
-//                        controller.moveFallingBlock(-1, 0);
-//                    }
-//                    if(e.getKeyCode() == KeyEvent.VK_D){
-//                        controller.moveFallingBlock(1, 0);
-//                    }
-//                    if (e.getKeyCode() == KeyEvent.VK_Q) {
-//                        controller.rotateFallingBlock(-1);
-//                    }
-//                    if (e.getKeyCode() == KeyEvent.VK_E) {
-//                        controller.rotateFallingBlock(1);
-//                    }
-//                    if (e.getKeyCode() == KeyEvent.VK_S) {
-//                        timer.start();
-//                    }
-//
-//
-//                    if (e.getKeyCode() == KeyEvent.VK_LEFT) {
-//                        controller.moveFallingBlock(-1, 0);
-//                    }
-//                    if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
-//                        //System.out.println("Moved+");
-//                        controller.moveFallingBlock(1, 0);
-//                    }
-//                    if (e.getKeyCode() == KeyEvent.VK_UP) {
-//                        controller.rotateFallingBlock(-1);
-//                    }
-//                    if (e.getKeyCode() == KeyEvent.VK_DOWN) {
-//                        //controller.moveFallingBlock(0, 1);
-//                        timer.start();
-//                    }
-//                }
-//                if (e.getID() == KeyEvent.KEY_RELEASED) {
-//                    if (e.getKeyCode() == KeyEvent.VK_DOWN) {
-//                        timer.stop();
-//                    }
-//                    if (e.getKeyCode() == KeyEvent.VK_S) {
-//                        timer.stop();
-//                    }
-//                }
-//                //System.out.println(e.getKeyCode());
-//
-//                return false;
-//            }
-//
-//            @Override
-//            public boolean postProcessKeyEvent(KeyEvent e) {
-//                return false;
-//            }
-//
-//            @Override
-//            public void processKeyEvent(Component focusedComponent, KeyEvent e) {
-//
-//            }
-//
-//            @Override
-//            protected void enqueueKeyEvents(long after, Component untilFocused) {
-//
-//            }
-//
-//            @Override
-//            protected void dequeueKeyEvents(long after, Component untilFocused) {
-//
-//            }
-//
-//            @Override
-//            protected void discardKeyEvents(Component comp) {
-//
-//            }
-//
-//            @Override
-//            public void focusNextComponent(Component aComponent) {
-//
-//            }
-//
-//            @Override
-//            public void focusPreviousComponent(Component aComponent) {
-//
-//            }
-//
-//            @Override
-//            public void upFocusCycle(Component aComponent) {
-//
-//            }
-//
-//            @Override
-//            public void downFocusCycle(Container aContainer) {
-//
-//            }
-//        });
     }
 
     /**
@@ -304,13 +211,23 @@ public class SwingGameplayForm implements SwingPage, Observer<GameplayContext> {
 
     @Override
     public void update(GameplayContext context) {
-//        for (int i = 0; i < context.getGameplayField().getRows(); i++) {
-//            for (int j = 0; j < context.getGameplayField().getCols(); j++) {
-//                fieldOutput.setCellColor(i, j, context.getGameplayField().getCell(i, j).getColor());
-//            }
-//        }
-        updateScore(context.getScore());
+        updateScore(context.score());
         fieldOutput.setFieldData(context);
+
+        nextPreviewGamePanel.clear();
+
+        for (int i = 0; i < context.nextBlock().height(); i++) {
+            for (int j = 0; j < context.nextBlock().width(); j++) {
+                if(i >= nextPreviewGamePanel.getHeight() || j >= nextPreviewGamePanel.getWidth()){
+                    continue;
+                }
+                if(context.nextBlock().form()[i][j]){
+                    nextPreviewGamePanel.setCellColor(i, j, context.nextBlock().color());
+                }
+            }
+        }
+        nextPreviewGamePanel.repaint();
+
         fieldOutput.repaint();
     }
 }

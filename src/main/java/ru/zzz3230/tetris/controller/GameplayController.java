@@ -24,7 +24,6 @@ public class GameplayController extends Controller {
         model.setObserver(gameplayPage);
         this.view = gameplayPage;
 
-
         startGame();
     }
 
@@ -42,6 +41,7 @@ public class GameplayController extends Controller {
             }
 
             model.update();
+            activityManager.setStatus("Playing with score: " + model.getScore());
         }
         finishGame();
     }

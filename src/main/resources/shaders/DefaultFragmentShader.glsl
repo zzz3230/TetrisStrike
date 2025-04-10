@@ -11,10 +11,13 @@ in vec2 uv;
 uniform sampler2D u_texture_0;
 uniform sampler2D u_texture_1;
 uniform sampler2D u_texture_2;
+uniform sampler2D u_texture_fail;
 
 uniform vec2 u_waveStartCell;
 uniform float u_waveStart;
 uniform vec4 u_waveColor;
+
+uniform float u_failStart;
 
 uniform vec4 u_destroyStartCells;
 uniform float u_destroyFadeTime;
@@ -253,20 +256,23 @@ vec4 applyDestroy(vec2 uv, vec4 startYs, float cellWidth, vec4 color, float time
 #define texOfCell u_textures[0]
 #define texOfPattern u_textures[1]
 #define texOfFalling u_textures[2]
+#define texFail u_textures[3]
 
 #define m_waveStartCell vec2(5, 20)
 #define m_waveStart -100.0
 #define m_waveColor vec4(1, 0., 0., 1.)
 
 #define m_destroyStartCells data
-#define m_destroyStart 0.0
+#define m_destroyStart -10.0
 #define m_destroyFadeTime 1.0
+#define m_failStart 1.0
 
 
 #else
 #define texOfCell u_texture_0
 #define texOfPattern u_texture_1
 #define texOfFalling u_texture_2
+#define texFail u_texture_fail
 
 #define m_waveStartCell u_waveStartCell
 #define m_waveStart u_waveStart
@@ -275,8 +281,55 @@ vec4 applyDestroy(vec2 uv, vec4 startYs, float cellWidth, vec4 color, float time
 #define m_destroyStartCells u_destroyStartCells
 #define m_destroyStart u_destroyStart
 #define m_destroyFadeTime u_destroyFadeTime
+#define m_failStart u_failStart
 
 #endif
+
+
+vec2 transformUV(vec2 _uv, float time) {
+    // Параметры эффекта взрыва
+    float explosionSpeed = .3;
+    float blastRadius = 2.;
+    float waveFrequency = 32.0;
+    float chaosFactor = 0.25;
+
+    // Центр взрыва (можно сделать параметром)
+    vec2 explosionCenter = vec2(0.5, 0.5);
+
+    // Вектор направления от центра к текущей точке
+    vec2 dir = _uv - explosionCenter;
+    float distance = length(dir);
+
+    // Нормализованное направление и время взрыва
+    vec2 normDir = dir / (distance + 0.001);
+    float blastPower = smoothstep(0.0, 1.0, time * explosionSpeed);
+
+    // Основное радиальное смещение
+    vec2 displacement = normDir * blastPower * blastRadius;
+
+    // Волновые искажения
+    float wave = sin(distance * waveFrequency - time * 8.0)
+    * cos(distance * waveFrequency * 0.5 + time * 4.0);
+    displacement += normDir * wave * 0.02 * blastPower;
+
+    // Шумовые искажения
+    vec2 noiseOffset = vec2(
+    perlinNoise(_uv * 8.0 + time * 2.0),
+    perlinNoise(_uv * 8.0 - time * 2.0)
+    ) * chaosFactor * blastPower;
+
+    // Хаотические вспышки в эпицентре
+    if(distance < 0.2) {
+        vec2 randomBurst = vec2(
+        rand(_uv * time) - 0.5,
+        rand(_uv * time + vec2(12.34, 56.78)) - 0.5
+        ) * 0.1 * (1.0 - distance/0.2);
+        displacement += randomBurst * blastPower;
+    }
+
+    // Комбинированный эффект
+    return _uv + displacement + noiseOffset;
+}
 
 void main(){
 
@@ -297,7 +350,18 @@ void main(){
     vec2 cellScreenSize = min(vec2(u_resolution.y / fieldSize.y), vec2(u_resolution.x / fieldSize.x));
 
     vec2 fieldSizeUv = cellScreenSize * fieldSize / u_resolution;
-    vec2 _uv = uv + vec2(-0.5 + fieldSizeUv.x/2., -0.5 + fieldSizeUv.y/2.);
+
+
+    vec2 _uv = uv;
+    if(u_failStart != 0.0 && u_time >= m_failStart){
+        _uv = transformUV(uv, u_time - m_failStart);
+        _uv = mix(_uv, uv, clamp((u_time - m_failStart)/10., 0., 1.));
+    }
+
+
+    _uv = _uv + vec2(-0.5 + fieldSizeUv.x/2., -0.5 + fieldSizeUv.y/2.);
+
+
 
     //vec2 patternSize = vec2(287., 600.);
 
@@ -363,7 +427,14 @@ void main(){
         out_color =
         vec4(perlinNoise(_uv + tr_time), 0.2, perlinNoise(_uv - tr_time) , 1.);
 
-        out_color.a = 1.;
+        out_color.a = 0.;
+
+        //out_color = vec4(0.15, 0.20, 0.22, 1.);
 
     }
+
+    if(u_failStart != 0.0 && u_time >= m_failStart){
+        out_color = mix(out_color, texture(texFail, uv), clamp((u_time - m_failStart -2.) / 5., 0., 1.));
+    }
+
 }

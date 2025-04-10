@@ -29,6 +29,7 @@ public class ActivityManager {
 
     private final LocalClient client;
     private volatile Core core;
+    private Activity activity;
 
     private volatile boolean isActivityAvailable = false;
     private volatile boolean isDiscordRunning = false;
@@ -71,6 +72,7 @@ public class ActivityManager {
             System.out.println(core.userManager().getCurrentUser().getAvatar());
             callback.run();
         }).start();
+
         isInitialized = true;
     }
 
@@ -126,43 +128,44 @@ public class ActivityManager {
         }
     }
 
+    public void setStatus(String status) {
+        if(!isActivityAvailable || activity == null){
+            return;
+        }
+        activity.setDetails(status);
+        core.activityManager().updateActivity(activity);
+    }
+
     public void startShowActivityIfAvailable(){
         if(!isActivityAvailable){
             return;
         }
 
-        try(Activity activity = new Activity())
-        {
-            activity.addButton(new ActivityButton("Play!", "https://example.com"));
-            activity.setActivityButtonsMode(ActivityButtonsMode.BUTTONS);
+        activity = new Activity();
 
-            activity.setDetails("Running an example");
-            activity.setState("and having fun");
+        //activity.addButton(new ActivityButton("Play!", "https://example.com"));
+        //activity.setActivityButtonsMode(ActivityButtonsMode.SECRETS);
 
-            activity.timestamps().setStart(Instant.now());
+        activity.setDetails("Starting game");
+        activity.setState("and having fun");
 
-            core.activityManager().updateActivity(activity);
+        activity.timestamps().setStart(Instant.now());
 
-            var un = core.userManager().getCurrentUser().getUsername();
-
-            System.out.println(un);
-
-            new Thread(() -> {
-                while(true)
+        new Thread(() -> {
+            while(true)
+            {
+                core.runCallbacks();
+                try
                 {
-                    core.runCallbacks();
-                    try
-                    {
-                        // Sleep a bit to save CPU
-                        Thread.sleep(2000);
-                    }
-                    catch(InterruptedException e)
-                    {
-                        throw new RuntimeException(e);
-                    }
+                    // Sleep a bit to save CPU
+                    Thread.sleep(2000);
                 }
-            }).start();
-        }
+                catch(InterruptedException e)
+                {
+                    throw new RuntimeException(e);
+                }
+            }
+        }).start();
     }
 
     public String getAvatarId() {
