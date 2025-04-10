@@ -1,15 +1,16 @@
 package ru.zzz3230.tetris.model.gameplay;
 
 import ru.zzz3230.tetris.dto.BlockData;
+import ru.zzz3230.tetris.dto.GameRulesData;
 import ru.zzz3230.tetris.exceptions.GameplayLogicException;
 import ru.zzz3230.tetris.model.gameplay.eventsData.BaseEventData;
+import ru.zzz3230.tetris.model.gameplay.eventsData.LinesClearedEventData;
 import ru.zzz3230.tetris.model.gameplay.eventsData.MergeEventData;
+import ru.zzz3230.tetris.model.gameplay.eventsData.NotifyEventData;
 import ru.zzz3230.tetris.utils.Observable;
 
 import java.awt.*;
 import java.security.SecureRandom;
-import java.util.ArrayList;
-import java.util.Random;
 
 public class GameplayModel extends Observable<GameplayContext> {
 
@@ -20,66 +21,48 @@ public class GameplayModel extends Observable<GameplayContext> {
     final int ROWS = 24;
     final int COLS = 10;
 
-    BlockData[] tests;
+    //BlockData[] tests;
     SecureRandom rand = new SecureRandom();
 
-    final int LINES_TO_LEVEL_UP = 3;
+    final int LINES_TO_LEVEL_UP = 4;
 
     int gameLevel = 0;
-    int score = 0;
+    double score = 0;
 
     BlockData currentFallBlock;
     BlockData nextFallBlock;
 
+    BlockOrderGenerator blockOrderGenerator;
+
     private boolean isPlaying = true;
+
+    private int clearRowsTimer = -1;
 
     public GameplayModel() {
         gameplayField = new GameplayField();
-        tests = new BlockData[]{
-                new BlockData(3, 2, new boolean[][]{
-                        {false, true, true},
-                        {true, true, false}
-                }, new Color(118, 34, 171)),
-                new BlockData(3, 2, new boolean[][]{
-                        {true, true, false},
-                        {false, true, true}
-                }, new Color(83, 83, 83)),
-                new BlockData(3, 2, new boolean[][]{
-                        {true, true, true},
-                        {true, false, false}
-                }, new Color(87, 171, 34)),
-                new BlockData(3, 2, new boolean[][]{
-                        {true, true, true},
-                        {false, false, true}
-                }, new Color(214, 72, 72)),
-                new BlockData(3, 2, new boolean[][]{
-                        {false, true, false},
-                        {true, true, true}
-                }, new Color(243, 150, 56)),
-                new BlockData(3, 2, new boolean[][]{
-                        {true, true, false},
-                        {true, true, false}
-                }, new Color(56, 137, 242)),
-                new BlockData(4, 1, new boolean[][]{
-                        {true, true, true, true}
-                }, Color.pink)
-        };
+        blockOrderGenerator = new BlockOrderGenerator(new GameRulesData());
     }
 
-    private ArrayList<Integer> emptyFilledRows(){
+    private int[] emptyFilledRows(){
         return gameplayField.getStaticBlocks().clearFilledRows();
+    }
+    private int[] getFilledRows(){
+        return gameplayField.getStaticBlocks().calculateFilledRows();
     }
 
     private void generateFallingBlock(){
         gameplayField.getFallingBlock().clear();
-        var bl = tests[rand.nextInt(tests.length)];
+        var bl = blockOrderGenerator.nextBlock();
         if(nextFallBlock == null){
-            nextFallBlock = tests[rand.nextInt(tests.length)];
+            nextFallBlock = blockOrderGenerator.nextBlock();
         }
 
         currentFallBlock = nextFallBlock;
         nextFallBlock = bl;
-        boolean overridden = gameplayField.getFallingBlock().pasteBlock(currentFallBlock, 0, 0);
+        boolean overridden = gameplayField.getFallingBlock().pasteBlock(
+                currentFallBlock,
+                0,
+                rand.nextInt(0, COLS - currentFallBlock.width()));
         if(overridden){
             finishGame();
         }
@@ -104,28 +87,39 @@ public class GameplayModel extends Observable<GameplayContext> {
 
         if(gameplayField.getFallingBlock().isOverlapIfMove(1, 0)){
             Point fallingBlockCenter = gameplayField.getFallingBlock().getCenter();
-            Color fallingBlockColor = currentFallBlock.getColor();
+            Color fallingBlockColor = currentFallBlock.color();
             gameplayField.getStaticBlocks().mergeFrom(gameplayField.getFallingBlock());
 
             generateFallingBlock();
 
-            eventType = GameplayEventType.FALLING_BLOCK_MERGED;
             eventData = new MergeEventData(fallingBlockCenter, fallingBlockColor);
         } else {
             gameplayField.getFallingBlock().move(1, 0);
         }
 
-        ArrayList<Integer> cleared = emptyFilledRows();
-        if(!cleared.isEmpty()){
-            score += cleared.size() * 100;
-            if(score >= LINES_TO_LEVEL_UP * 100 * (gameLevel + 1)){
-                gameLevel++;
-            }
-            //eventType = GameplayEventType.ROWS_CLEARED;
-            //eventData = new MergeEventData(cleared);
+
+
+        clearRowsTimer--;
+        if(clearRowsTimer == 0){
+            int[] cleared = emptyFilledRows();
+            score += getScoreByClear(cleared.length);
+
+            levelUpIfNeeded();
+
+            eventData = new NotifyEventData(GameplayEventType.STATIC_BLOCKS_MOVED);
+
+            clearRowsTimer = -1;
         }
 
-        notifyObserver(new GameplayContext(gameplayField, eventType, eventData, score));
+        if(clearRowsTimer < 0){
+            int[] filledRows = getFilledRows();
+            if(filledRows.length != 0){
+                clearRowsTimer = 2;
+                eventData = new LinesClearedEventData(filledRows);
+            }
+        }
+
+        notifyObserver(new GameplayContext(gameplayField, eventData, getScore(), getUpdateDelaySec()));
     }
 
     public void moveFallingBlock(int dx, int dy){
@@ -143,7 +137,7 @@ public class GameplayModel extends Observable<GameplayContext> {
             if(!gameplayField.getFallingBlock().isOverlapIfMove(dy, 0)){
                 gameplayField.getFallingBlock().move(dy, 0);
 
-                score += dy;
+                score += moveDownScore(dy);
 
                 defaultNotify();
             }
@@ -166,22 +160,49 @@ public class GameplayModel extends Observable<GameplayContext> {
     }
 
     private void defaultNotify(){
-        notifyObserver(new GameplayContext(gameplayField, GameplayEventType.UNKNOWN, null, score));
+        notifyObserver(new GameplayContext(gameplayField, null, getScore(), getUpdateDelaySec()));
     }
     private void gameOverNotify(){
-        notifyObserver(new GameplayContext(gameplayField, GameplayEventType.GAME_OVER, null, score));
+        notifyObserver(new GameplayContext(gameplayField, new NotifyEventData(GameplayEventType.GAME_OVER), getScore(), getUpdateDelaySec()));
     }
 
     public boolean isPlaying(){
         return isPlaying;
     }
 
-    public int getUpdateDelay(){
+    public float getUpdateDelaySec(){
+        //float secDelay = 0.8f - 0.1f * gameLevel;
+        float secDelay = (float)Math.exp(-gameLevel/5f);
+        return secDelay;
+    }
+
+    public int getUpdateDelayMs(){
         //float secDelay = 0.8f + 1f / (gameLevel/10f + 1f) - 1f;
-        float secDelay = 0.8f - 0.1f * gameLevel;
-        return (int)(secDelay * 1000);
+        return (int)(getUpdateDelaySec() * 1000);
     }
     public int getScore(){
-        return score;
+        return (int)score;
+    }
+
+    private void levelUpIfNeeded(){
+        if(score >= LINES_TO_LEVEL_UP * 100 * (gameLevel + 1)){
+            gameLevel++;
+        }
+    }
+
+    private float getScoreByClear(int lines){
+        float base = lines * 100;
+        float levelBonus = 10f * gameLevel;
+        return switch (lines) {
+            case 1 -> base + levelBonus;
+            case 2 -> base + 3f * levelBonus;
+            case 3 -> base + 4f * levelBonus;
+            case 4 -> base + 6f * levelBonus;
+            default -> base;
+        };
+    }
+
+    private float moveDownScore(int dy){
+        return (dy + gameLevel / 4f) / 4f;
     }
 }

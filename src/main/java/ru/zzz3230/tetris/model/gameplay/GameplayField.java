@@ -5,10 +5,8 @@ import ru.zzz3230.tetris.dto.BlockData;
 import ru.zzz3230.tetris.utils.MathUtils;
 
 import java.awt.*;
-import java.awt.geom.Point2D;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Enumeration;
 
 public class GameplayField {
     GameplayFieldFragment staticBlocks;
@@ -239,7 +237,6 @@ public class GameplayField {
                         centerRow += i;
                         centerColumn += j;
                         filledCells++;
-                        break;
                     }
                 }
             }
@@ -251,15 +248,15 @@ public class GameplayField {
         }
 
         public boolean isOverlapIfRotate(int dRot){
-            if(dRot != 1){
-                throw new NotImplementedException();
-            }
+//            if(dRot != 1){
+//                throw new NotImplementedException();
+//            }
 
             Point center = getCenter();
             for (int i = 0; i < getRows(); i++) {
                 for (int j = 0; j < getCols(); j++) {
                     if(getCell(i, j).isFilled()){
-                        Point rotatedPoint = MathUtils.rotatePoint90Deg(new Point(i, j), center);
+                        Point rotatedPoint = MathUtils.rotatePoint90Deg(new Point(i, j), center, dRot);
                         if(!isInRange(rotatedPoint.x, rotatedPoint.y)){
                             return true;
                         }
@@ -279,7 +276,7 @@ public class GameplayField {
             for (int i = 0; i < getRows(); i++) {
                 for (int j = 0; j < getCols(); j++) {
                     if(getCell(i, j).isFilled()){
-                        Point rotatedPoint = MathUtils.rotatePoint90Deg(new Point(i, j), center);
+                        Point rotatedPoint = MathUtils.rotatePoint90Deg(new Point(i, j), center, dRot);
                         int newRow = rotatedPoint.x;
                         int newColumn = rotatedPoint.y;
                         if(rotatedBlock.isInRange(newRow, newColumn))
@@ -310,10 +307,10 @@ public class GameplayField {
         }
 
         public boolean pasteBlock(BlockData blockData, int row, int column) {
-            boolean[][] form = blockData.getForm();
-            Color color = blockData.getColor();
-            int width = blockData.getWidth();
-            int height = blockData.getHeight();
+            boolean[][] form = blockData.form();
+            Color color = blockData.color();
+            int width = blockData.width();
+            int height = blockData.height();
 
             boolean overridden = false;
 
@@ -331,7 +328,25 @@ public class GameplayField {
             return overridden;
         }
 
-        public ArrayList<Integer> clearFilledRows(){
+        public int[] calculateFilledRows(){
+            ArrayList<Integer> cleared = new ArrayList<Integer>();
+
+            for (int i = 0; i < rows; i++) {
+                boolean isFilled = true;
+                for (int j = 0; j < columns; j++) {
+                    if(!getCell(i, j).isFilled()){
+                        isFilled = false;
+                        break;
+                    }
+                }
+                if(isFilled){
+                    cleared.add(i);
+                }
+            }
+            return cleared.stream().mapToInt(i -> i).toArray();
+        }
+
+        public int[] clearFilledRows(){
 
             ArrayList<Integer> cleared = new ArrayList<Integer>();
 
@@ -355,7 +370,7 @@ public class GameplayField {
                     }
                 }
             }
-            return cleared;
+            return cleared.stream().mapToInt(i -> i).toArray();
         }
     }
 }

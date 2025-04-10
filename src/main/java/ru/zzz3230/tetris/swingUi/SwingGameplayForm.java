@@ -11,6 +11,7 @@ import ru.zzz3230.tetris.utils.Observer;
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
 import java.awt.*;
+import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 public class SwingGameplayForm implements SwingPage, Observer<GameplayContext> {
@@ -48,7 +49,7 @@ public class SwingGameplayForm implements SwingPage, Observer<GameplayContext> {
 
         panel.setDoubleBuffered(true);
 
-        timer = new Timer(10, e -> {
+        timer = new Timer(20, e -> {
             controller.moveFallingBlock(0, 1);
         });
     }
@@ -63,7 +64,9 @@ public class SwingGameplayForm implements SwingPage, Observer<GameplayContext> {
     @Override
     public void onAttached(JFrame frame) {
         System.out.println("Attached");
-        KeyboardFocusManager.getCurrentKeyboardFocusManager().addKeyEventDispatcher(new KeyboardFocusManager() {
+
+        TetrisKeyListener keyListener = new TetrisKeyListener(controller, timer);
+                KeyboardFocusManager.getCurrentKeyboardFocusManager().addKeyEventDispatcher(new KeyboardFocusManager() {
             @Override
             public boolean dispatchEvent(AWTEvent e) {
                 return false;
@@ -71,30 +74,7 @@ public class SwingGameplayForm implements SwingPage, Observer<GameplayContext> {
 
             @Override
             public boolean dispatchKeyEvent(KeyEvent e) {
-
-                if (e.getID() == KeyEvent.KEY_PRESSED) {
-                    if (e.getKeyCode() == KeyEvent.VK_LEFT) {
-                        controller.moveFallingBlock(-1, 0);
-                    }
-                    if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
-                        //System.out.println("Moved+");
-                        controller.moveFallingBlock(1, 0);
-                    }
-                    if (e.getKeyCode() == KeyEvent.VK_UP) {
-                        controller.rotateFallingBlock(1);
-                    }
-                    if (e.getKeyCode() == KeyEvent.VK_DOWN) {
-                        //controller.moveFallingBlock(0, 1);
-                        timer.start();
-                    }
-                }
-                if(e.getID() == KeyEvent.KEY_RELEASED) {
-                    if (e.getKeyCode() == KeyEvent.VK_DOWN) {
-                        timer.stop();
-                    }
-                }
-                //System.out.println(e.getKeyCode());
-
+                keyListener.dispatchKeyEvent(e);
                 return false;
             }
 
@@ -143,6 +123,112 @@ public class SwingGameplayForm implements SwingPage, Observer<GameplayContext> {
 
             }
         });
+
+
+//        KeyboardFocusManager.getCurrentKeyboardFocusManager().addKeyEventDispatcher(new KeyboardFocusManager() {
+//            @Override
+//            public boolean dispatchEvent(AWTEvent e) {
+//                return false;
+//            }
+//
+//            @Override
+//            public boolean dispatchKeyEvent(KeyEvent e) {
+//
+//                //Q E rotate
+//                //S down
+//                //A D left right
+//
+//                if (e.getID() == KeyEvent.KEY_PRESSED) {
+//                    if(e.getKeyCode() == KeyEvent.VK_A){
+//                        controller.moveFallingBlock(-1, 0);
+//                    }
+//                    if(e.getKeyCode() == KeyEvent.VK_D){
+//                        controller.moveFallingBlock(1, 0);
+//                    }
+//                    if (e.getKeyCode() == KeyEvent.VK_Q) {
+//                        controller.rotateFallingBlock(-1);
+//                    }
+//                    if (e.getKeyCode() == KeyEvent.VK_E) {
+//                        controller.rotateFallingBlock(1);
+//                    }
+//                    if (e.getKeyCode() == KeyEvent.VK_S) {
+//                        timer.start();
+//                    }
+//
+//
+//                    if (e.getKeyCode() == KeyEvent.VK_LEFT) {
+//                        controller.moveFallingBlock(-1, 0);
+//                    }
+//                    if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
+//                        //System.out.println("Moved+");
+//                        controller.moveFallingBlock(1, 0);
+//                    }
+//                    if (e.getKeyCode() == KeyEvent.VK_UP) {
+//                        controller.rotateFallingBlock(-1);
+//                    }
+//                    if (e.getKeyCode() == KeyEvent.VK_DOWN) {
+//                        //controller.moveFallingBlock(0, 1);
+//                        timer.start();
+//                    }
+//                }
+//                if (e.getID() == KeyEvent.KEY_RELEASED) {
+//                    if (e.getKeyCode() == KeyEvent.VK_DOWN) {
+//                        timer.stop();
+//                    }
+//                    if (e.getKeyCode() == KeyEvent.VK_S) {
+//                        timer.stop();
+//                    }
+//                }
+//                //System.out.println(e.getKeyCode());
+//
+//                return false;
+//            }
+//
+//            @Override
+//            public boolean postProcessKeyEvent(KeyEvent e) {
+//                return false;
+//            }
+//
+//            @Override
+//            public void processKeyEvent(Component focusedComponent, KeyEvent e) {
+//
+//            }
+//
+//            @Override
+//            protected void enqueueKeyEvents(long after, Component untilFocused) {
+//
+//            }
+//
+//            @Override
+//            protected void dequeueKeyEvents(long after, Component untilFocused) {
+//
+//            }
+//
+//            @Override
+//            protected void discardKeyEvents(Component comp) {
+//
+//            }
+//
+//            @Override
+//            public void focusNextComponent(Component aComponent) {
+//
+//            }
+//
+//            @Override
+//            public void focusPreviousComponent(Component aComponent) {
+//
+//            }
+//
+//            @Override
+//            public void upFocusCycle(Component aComponent) {
+//
+//            }
+//
+//            @Override
+//            public void downFocusCycle(Container aContainer) {
+//
+//            }
+//        });
     }
 
     /**
@@ -157,11 +243,11 @@ public class SwingGameplayForm implements SwingPage, Observer<GameplayContext> {
         rootPanel.setLayout(new GridLayoutManager(9, 3, new Insets(10, 10, 10, 10), 10, 10));
         exitButton = new JButton();
         exitButton.setText("Exit");
-        rootPanel.add(exitButton, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        rootPanel.add(exitButton, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(145, 30), null, 0, false));
         button2 = new JButton();
         button2.setHorizontalAlignment(0);
         button2.setText("???");
-        rootPanel.add(button2, new GridConstraints(1, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        rootPanel.add(button2, new GridConstraints(1, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(145, 30), null, 0, false));
         gameFieldPanel = new JPanel();
         gameFieldPanel.setLayout(new BorderLayout(0, 0));
         gameFieldPanel.setBackground(new Color(-5227214));
@@ -189,9 +275,9 @@ public class SwingGameplayForm implements SwingPage, Observer<GameplayContext> {
         panel2.add(nextPreviewPanel, BorderLayout.SOUTH);
         scoreLabel = new JLabel();
         scoreLabel.setText("<html>\n\t<span style=\"font-size: 15;\">\n\t\tSCORE \n\t\t<b style=\"font-size: 25;\">123</b>\n\t</span>\n</html>");
-        rootPanel.add(scoreLabel, new GridConstraints(3, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, null, null, null, 0, false));
+        rootPanel.add(scoreLabel, new GridConstraints(3, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, null, new Dimension(145, 31), null, 0, false));
         final Spacer spacer1 = new Spacer();
-        rootPanel.add(spacer1, new GridConstraints(4, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_VERTICAL, 1, GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
+        rootPanel.add(spacer1, new GridConstraints(4, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_VERTICAL, 1, GridConstraints.SIZEPOLICY_WANT_GROW, null, new Dimension(145, 14), null, 0, false));
     }
 
     /**
@@ -204,7 +290,7 @@ public class SwingGameplayForm implements SwingPage, Observer<GameplayContext> {
     private void createUIComponents() {
     }
 
-    private void updateScore(int newScore){
+    private void updateScore(int newScore) {
         String html = """
                 <html>
                 	<span style="font-size: 15;">

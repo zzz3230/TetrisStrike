@@ -16,9 +16,13 @@ uniform vec2 u_waveStartCell;
 uniform float u_waveStart;
 uniform vec4 u_waveColor;
 
+uniform vec4 u_destroyStartCells;
+uniform float u_destroyFadeTime;
+uniform float u_destroyStart;
+
 uniform vec2 u_resolution;
 uniform float u_time;
-//uniform sampler2D u_textures[16];
+uniform sampler2D u_textures[16];
 
 
 float psrdnoise(vec2 x, vec2 period, float alpha, out vec2 gradient) {
@@ -206,17 +210,58 @@ vec4 applyWave(vec2 uv, vec2 uvCenter, vec4 color, float time, float startTime, 
     return color;
 }
 
-#define GLSL_APP
+vec4 applyDestroy(vec2 uv, vec4 startYs, float cellWidth, vec4 color, float time, float startTime, float fadeTime, vec4 waveColor){
+    float speed = 1.;
+    float size = 0.050;
+
+    vec2 correction = (u_resolution / max(u_resolution.x, u_resolution.y));
+
+    vec2 pixelSize = vec2(0.002) * (1./correction); // размер в uv-координатах
+    uv = round(uv / pixelSize) * pixelSize;
+
+    if(time < startTime || time > startTime + fadeTime){
+        return color;
+    }
+
+    time = time - startTime;
+
+    float NOISE_CONSTANT = 3.;
+    float OVERLAP_VALUE = 0.002;
+
+    vec2 noise = vec2(
+    perlinNoise(uv * correction * 100.) * (sqrt(time*10.)) * (NOISE_CONSTANT / fadeTime),
+    0.00
+    );
+
+    for(int i = 0; i < 4; i++){
+        float start = startYs[i];
+        if(start < uv.y + noise.y + OVERLAP_VALUE && start + cellWidth + OVERLAP_VALUE > uv.y - noise.y){
+            if(uv.x < NOISE_CONSTANT - noise.x)
+            return color;
+            return vec4(0.);
+        }
+
+    }
+
+    return color;
+}
+
+#define GLSL_APP_
 
 
-#ifdef GLSL_APP_
+#ifdef GLSL_APP
 #define texOfCell u_textures[0]
-#define texOfPattern u_textures[3]
-#define texOfFalling u_textures[4]
+#define texOfPattern u_textures[1]
+#define texOfFalling u_textures[2]
 
 #define m_waveStartCell vec2(5, 20)
-#define m_waveStart 0.0
+#define m_waveStart -100.0
 #define m_waveColor vec4(1, 0., 0., 1.)
+
+#define m_destroyStartCells data
+#define m_destroyStart 0.0
+#define m_destroyFadeTime 1.0
+
 
 #else
 #define texOfCell u_texture_0
@@ -226,6 +271,11 @@ vec4 applyWave(vec2 uv, vec2 uvCenter, vec4 color, float time, float startTime, 
 #define m_waveStartCell u_waveStartCell
 #define m_waveStart u_waveStart
 #define m_waveColor u_waveColor
+
+#define m_destroyStartCells u_destroyStartCells
+#define m_destroyStart u_destroyStart
+#define m_destroyFadeTime u_destroyFadeTime
+
 #endif
 
 void main(){
@@ -244,10 +294,10 @@ void main(){
 
     //vec2 cellScreenSize = vec2(20., 20.);
 
-    vec2 cellScreenSize = vec2(u_resolution.y / fieldSize.y);
+    vec2 cellScreenSize = min(vec2(u_resolution.y / fieldSize.y), vec2(u_resolution.x / fieldSize.x));
 
     vec2 fieldSizeUv = cellScreenSize * fieldSize / u_resolution;
-    vec2 _uv = uv + vec2(-0.5 + fieldSizeUv.x/2., 0.);
+    vec2 _uv = uv + vec2(-0.5 + fieldSizeUv.x/2., -0.5 + fieldSizeUv.y/2.);
 
     //vec2 patternSize = vec2(287., 600.);
 
@@ -286,11 +336,28 @@ void main(){
         float waveStart = m_waveStart;
         vec4 waveColor = m_waveColor;
 
+        //For glsl.app
+
+        #ifdef GLSL_APP
+        vec4 data = vec4(
+        cellUvSize.y * 10.,
+        cellUvSize.y * 2.,
+        cellUvSize.y * 1.,
+        cellUvSize.y * 0.
+        );
+        #else
+        vec4 data = vec4(
+        cellUvSize.y * u_destroyStartCells[0],
+        cellUvSize.y * u_destroyStartCells[1],
+        cellUvSize.y * u_destroyStartCells[2],
+        cellUvSize.y * u_destroyStartCells[3]
+        );
+        #endif
+
         out_color = applyWave(_uv, cellUvSize * waveStartCell, out_color, u_time, waveStart, waveColor);
+        out_color = applyDestroy(_uv, data, cellUvSize.y, out_color, u_time, m_destroyStart, m_destroyFadeTime, waveColor);
     }
     else{
-        //out_color /= vec4(2);
-
         float tr_time = u_time / 100. + 2.;
 
         out_color =
@@ -298,12 +365,5 @@ void main(){
 
         out_color.a = 1.;
 
-//        if((cellUvSize * u_waveStartCell).y < 1.){
-//            out_color = vec4(0.);
-//        }
-
-        //out_color = vec4(u_waveStart / 50.);
     }
-
-    //out_color = applyWave(_uv, cellUvSize * u_waveStartCell, out_color, u_time, u_waveStart, vec4(1.));
 }

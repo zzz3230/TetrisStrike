@@ -2,11 +2,9 @@ package ru.zzz3230.tetris.model.gameplay.eventsData;
 
 import ru.zzz3230.tetris.model.gameplay.GameplayEventType;
 
-import java.awt.*;
-
-public record MergeEventData(Point mergePoint, Color fallingColor) implements BaseEventData{
+public record LinesClearedEventData(int[] indexes) implements BaseEventData{
     @Override
     public GameplayEventType getEventType() {
-        return GameplayEventType.FALLING_BLOCK_MERGED;
+        return GameplayEventType.LINES_CLEARED;
     }
 }

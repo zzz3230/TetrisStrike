@@ -4,26 +4,26 @@ import ru.zzz3230.tetris.model.gameplay.eventsData.BaseEventData;
 
 public class GameplayContext {
     GameplayField gameplayField;
-    GameplayEventType eventType;
     BaseEventData eventData;
     private final int score;
-    public GameplayContext(GameplayField gameplayField, GameplayEventType eventType, BaseEventData eventData, int score) {
+    private final float iterationDelay;
+    public GameplayContext(GameplayField gameplayField, BaseEventData eventData, int score, float iterationDelay) {
         this.gameplayField = gameplayField;
-        this.eventType = eventType;
         this.eventData = eventData;
         this.score = score;
+        this.iterationDelay = iterationDelay;
     }
 
     public GameplayField getGameplayField() {
         return gameplayField;
-    }
-    public GameplayEventType getEventType() {
-        return eventType;
     }
     public BaseEventData getEventData() {
         return eventData;
     }
     public int getScore() {
         return score;
+    }
+    public float getIterationDelay() {
+        return iterationDelay;
     }
 }

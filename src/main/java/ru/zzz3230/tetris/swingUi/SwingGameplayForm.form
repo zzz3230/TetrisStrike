@@ -10,7 +10,9 @@
     <children>
       <component id="fe65" class="javax.swing.JButton" binding="exitButton">
         <constraints>
-          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="145" height="30"/>
+          </grid>
         </constraints>
         <properties>
           <text value="Exit"/>
@@ -18,7 +20,9 @@
       </component>
       <component id="32114" class="javax.swing.JButton" binding="button2" default-binding="true">
         <constraints>
-          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="145" height="30"/>
+          </grid>
         </constraints>
         <properties>
           <horizontalAlignment value="0"/>
@@ -82,7 +86,9 @@
       </grid>
       <component id="a6fce" class="javax.swing.JLabel" binding="scoreLabel">
         <constraints>
-          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="145" height="31"/>
+          </grid>
         </constraints>
         <properties>
           <text value="&lt;html&gt;&#10;&#9;&lt;span style=&quot;font-size: 15;&quot;&gt;&#10;&#9;&#9;SCORE &#10;&#9;&#9;&lt;b style=&quot;font-size: 25;&quot;&gt;123&lt;/b&gt;&#10;&#9;&lt;/span&gt;&#10;&lt;/html&gt;"/>
@@ -90,7 +96,9 @@
       </component>
       <vspacer id="9d99c">
         <constraints>
-          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="145" height="14"/>
+          </grid>
         </constraints>
       </vspacer>
     </children>

@@ -1,6 +1,7 @@
 package ru.zzz3230.tetris;
 
 import com.google.gson.Gson;
+import com.jogamp.opengl.GLProfile;
 import de.jcm.discordgamesdk.Core;
 import de.jcm.discordgamesdk.CreateParams;
 import de.jcm.discordgamesdk.activity.Activity;
@@ -15,6 +16,8 @@ import java.time.Instant;
 
 import ru.zzz3230.activity.ActivityManager;
 import ru.zzz3230.tblib.client.LocalClient;
+import ru.zzz3230.tetris.controller.GameplayController;
+import ru.zzz3230.tetris.controller.LeaderboardController;
 import ru.zzz3230.tetris.controller.MainMenuController;
 import ru.zzz3230.tetris.swingUi.SwingNavigationManager;
 import ru.zzz3230.tetris.utils.NavigationManager;
@@ -107,6 +110,8 @@ public class Main {
 
 
         ;
+
+        //new Thread(GLProfile::initSingleton);
 
         NavigationManager navigationManager = new SwingNavigationManager(frame);
         var c = new MainMenuController(navigationManager, new ActivityManager(new LocalClient()), new TbClientManager());

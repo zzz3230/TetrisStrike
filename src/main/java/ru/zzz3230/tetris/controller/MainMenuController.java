@@ -23,6 +23,7 @@ public class MainMenuController extends Controller {
     private final ActivityManager activityManager;
     private final TbClientManager clientManager;
     private final MainMenuModel model;
+    private boolean authenticationCompeted = false;
 
     public MainMenuController(NavigationManager navigationManager, ActivityManager activityManager, TbClientManager clientManager) {
         super(navigationManager);
@@ -48,6 +49,10 @@ public class MainMenuController extends Controller {
         activityManager.init(() -> {
             if(!isActive()){
                 return;
+            }
+
+            if(!clientManager.getNetworkClient().isOnlineAvailable()){
+                playAsOffline();
             }
 
             if(tryCachedAuth()){
@@ -131,21 +136,31 @@ public class MainMenuController extends Controller {
 
     private void playAsOffline(){
         model.setUsername(null);
+        authenticationCompeted = true;
     }
     private void playAsOnline(){
         model.setUsername(clientManager.getNetworkClient().getUsername());
         Image rawAvatar = clientManager.getNetworkClient().getAvatar(clientManager.getNetworkClient().getAid());
         Image scaledAvatar = rawAvatar.getScaledInstance(32, 32, java.awt.Image.SCALE_SMOOTH);
         model.setAvatar(scaledAvatar);
+        authenticationCompeted = true;
     }
 
     public void startGame() {
+        if(!authenticationCompeted){
+            return;
+        }
+
         GameplayController gameplayController = new GameplayController(navigationManager, activityManager, clientManager);
         hideView();
         gameplayController.showView();
     }
 
     public void showLeaderboard() {
+        if(!authenticationCompeted){
+            return;
+        }
+
         LeaderboardController leaderboardController = new LeaderboardController(navigationManager, activityManager, clientManager);
         hideView();
         leaderboardController.showView();

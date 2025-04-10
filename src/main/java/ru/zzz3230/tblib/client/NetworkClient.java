@@ -67,6 +67,12 @@ public class NetworkClient {
                     }
                 })
                 .create();
+
+
+    }
+
+    public boolean isOnlineAvailable(){
+        return tbConnection.isInitialized();
     }
 
     public int getAid() {

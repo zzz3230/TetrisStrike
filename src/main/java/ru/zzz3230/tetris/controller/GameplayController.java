@@ -4,8 +4,6 @@ import ru.zzz3230.activity.ActivityManager;
 import ru.zzz3230.tetris.TbClientManager;
 import ru.zzz3230.tetris.model.gameplay.GameplayModel;
 import ru.zzz3230.tetris.swingUi.SwingGameplayForm;
-import ru.zzz3230.tetris.swingUi.SwingGameplayPage;
-import ru.zzz3230.tetris.swingUi.opengl.OpenGLSwingExample;
 import ru.zzz3230.tetris.utils.Controller;
 import ru.zzz3230.tetris.utils.NavigationManager;
 
@@ -38,7 +36,7 @@ public class GameplayController extends Controller {
     private void gameLoop() {
         while (model.isPlaying()) {
             try {
-                Thread.sleep(model.getUpdateDelay());
+                Thread.sleep(model.getUpdateDelayMs());
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
@@ -49,7 +47,9 @@ public class GameplayController extends Controller {
     }
 
     private void finishGame(){
-        clientManager.getNetworkClient().gameFinished(model.getScore());
+        if(clientManager.getNetworkClient().alreadyLoggedIn()){
+            clientManager.getNetworkClient().gameFinished(model.getScore());
+        }
     }
 
     public void moveFallingBlock(int dx, int dy){

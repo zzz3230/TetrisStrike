@@ -33,6 +33,10 @@ public class TbConnection {
         this.appSecret = appSecret;
     }
 
+    public boolean isInitialized() {
+        return endpointUrl != null;
+    }
+
     public URI makeRelativeUri(String path) {
         try {
             log.info("Made url {}", endpointUrl + path);
@@ -70,7 +74,7 @@ public class TbConnection {
                     throw new ConnectionException("Entry/Endpoint URL not found");
                 }
             } catch (ExecutionException | InterruptedException e) {
-                throw new RuntimeException(e);
+                log.error("Error while fetching url", e);
             }
         }
         log.info("Initialized with endpoint: {}", endpointUrl);

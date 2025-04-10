@@ -22,9 +22,9 @@ tasks.register('fatJar', Jar) {
     manifest {
         attributes 'Implementation-Title': 'Gradle Jar File Example',
                 'Implementation-Version': version,
-                'Main-Class': 'ru.zzz3230.tetris.Main'
+                'Main-Class': 'ru.zzz3230.tetris.Launcher'
     }
-    archiveBaseName = project.name + '-all'
+    archiveBaseName = project.name + '-all-launcher'
 
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 
