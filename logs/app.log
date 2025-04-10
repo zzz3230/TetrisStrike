@@ -1125,3 +1125,23 @@ Caused by: java.net.ConnectException: HTTP connect timed out
 2025-04-10 19:25:48 [Thread-6] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/app/tetris/game_finished
 2025-04-10 19:25:48 [Thread-6] INFO  ru.zzz3230.tblib.client.NetworkClient - Game finished successful for ???
 2025-04-10 19:26:05 [AWT-EventQueue-0] INFO  ru.zzz3230.tetris.swingUi.SwingGameplayForm - Gameplay detached
+2025-04-10 19:39:49 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: https://web.tbhello.ru
+2025-04-10 19:39:50 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-10 19:39:50 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDI4ODM1MSwiZXhwIjoxNzQ2ODgwMzUxLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.M8lDXqQKuRyfRTHPndkDuHqEEnhrwRm2V_0nfFmM5LU
+2025-04-10 19:39:50 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/account/info
+2025-04-10 19:39:56 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: https://web.tbhello.ru
+2025-04-10 19:39:57 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-10 19:39:57 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDI4ODM1MSwiZXhwIjoxNzQ2ODgwMzUxLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.M8lDXqQKuRyfRTHPndkDuHqEEnhrwRm2V_0nfFmM5LU
+2025-04-10 19:39:57 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/account/info
+2025-04-10 19:39:58 [AWT-EventQueue-0] INFO  ru.zzz3230.tetris.swingUi.SwingGameplayForm - Gameplay attached
+2025-04-10 19:40:27 [main] INFO  ru.zzz3230.tblib.TbConnection - Initialized with endpoint: https://web.tbhello.ru
+2025-04-10 19:40:27 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Using cached credentials for zzz3230_1
+2025-04-10 19:40:27 [Thread-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching account info for token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDI4ODM1MSwiZXhwIjoxNzQ2ODgwMzUxLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.M8lDXqQKuRyfRTHPndkDuHqEEnhrwRm2V_0nfFmM5LU
+2025-04-10 19:40:27 [Thread-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/account/info
+2025-04-10 19:40:28 [AWT-EventQueue-0] INFO  ru.zzz3230.tetris.swingUi.SwingGameplayForm - Gameplay attached
+2025-04-10 19:44:58 [Thread-2] INFO  ru.zzz3230.tblib.client.NetworkClient - Starting game finished with 5051
+2025-04-10 19:44:58 [Thread-2] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/app/tetris/game_finished
+2025-04-10 19:44:58 [Thread-2] INFO  ru.zzz3230.tblib.client.NetworkClient - Game finished successful for ???
+2025-04-10 19:45:05 [AWT-EventQueue-0] INFO  ru.zzz3230.tetris.swingUi.SwingGameplayForm - Gameplay detached
+2025-04-10 19:45:06 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.client.NetworkClient - Fetching leaderboard for: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJ1c2VybmFtZSI6Inp6ejMyMzBfMSIsIm5iZiI6MTc0NDI4ODM1MSwiZXhwIjoxNzQ2ODgwMzUxLCJpc3MiOiJUYi1NYXN0ZXItU2VydmVyIiwiYXVkIjoiQW55LUNsaWVudCJ9.M8lDXqQKuRyfRTHPndkDuHqEEnhrwRm2V_0nfFmM5LU
+2025-04-10 19:45:06 [AWT-EventQueue-0] INFO  ru.zzz3230.tblib.TbConnection - Made url https://web.tbhello.ru/api/app/tetris/get_leaderboard?scope=world

@@ -6,6 +6,9 @@ plugins {
 group = 'ru.zzz3230'
 version = '1.0-SNAPSHOT'
 
+compileJava.options.fork = true
+compileJava.options.forkOptions.executable = "C:\\Users\\zzz32\\Downloads\\jdk-21.0.2\\bin\\javac.exe"
+
 
 tasks.register('runJar', JavaExec) {
     mainClass = 'ru.zzz3230.tetris.Main' // Укажите свой главный класс
@@ -67,4 +70,3 @@ dependencies {
 test {
     useJUnitPlatform()
 }
-

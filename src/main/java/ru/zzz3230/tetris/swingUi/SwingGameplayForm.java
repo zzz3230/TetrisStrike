@@ -21,7 +21,6 @@ public class SwingGameplayForm implements SwingPage, Observer<GameplayContext> {
     private final GameplayController controller;
     private JButton exitButton;
     private JPanel rootPanel;
-    private JButton button2;
     private JPanel gameFieldPanel;
     private JPanel nextPreviewPanel;
     private JLabel scoreLabel;
@@ -151,10 +150,6 @@ public class SwingGameplayForm implements SwingPage, Observer<GameplayContext> {
         exitButton = new JButton();
         exitButton.setText("Exit");
         rootPanel.add(exitButton, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(145, 30), null, 0, false));
-        button2 = new JButton();
-        button2.setHorizontalAlignment(0);
-        button2.setText("???");
-        rootPanel.add(button2, new GridConstraints(1, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(145, 30), null, 0, false));
         gameFieldPanel = new JPanel();
         gameFieldPanel.setLayout(new BorderLayout(0, 0));
         gameFieldPanel.setBackground(new Color(-5227214));
@@ -163,7 +158,7 @@ public class SwingGameplayForm implements SwingPage, Observer<GameplayContext> {
         panel1.setLayout(new BorderLayout(0, 0));
         rootPanel.add(panel1, new GridConstraints(1, 2, 4, 1, GridConstraints.ANCHOR_EAST, GridConstraints.FILL_VERTICAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, null, null, null, 0, false));
         final JLabel label1 = new JLabel();
-        label1.setText("<html><b style=\"text-align:center;\">HELP</b><br>Left: ←<br>Right: →<br>Down: ↓<br>Rotate: ↑<br>Drop: Space<br>Quit: q</html>");
+        label1.setText("<html><b style=\"text-align:center;\">HELP</b><br>\nLeft: ← A<br>\nRight: → D<br>\nDown: ↓ S<br>\nRotate: ↑ Q/E<br>\n</html>");
         panel1.add(label1, BorderLayout.CENTER);
         final JPanel panel2 = new JPanel();
         panel2.setLayout(new BorderLayout(0, 0));
@@ -181,7 +176,7 @@ public class SwingGameplayForm implements SwingPage, Observer<GameplayContext> {
         nextPreviewPanel.setPreferredSize(new Dimension(100, 100));
         panel2.add(nextPreviewPanel, BorderLayout.SOUTH);
         scoreLabel = new JLabel();
-        scoreLabel.setText("<html>\n\t<span style=\"font-size: 15;\">\n\t\tSCORE \n\t\t<b style=\"font-size: 25;\">123</b>\n\t</span>\n</html>");
+        scoreLabel.setText("<html>\n\t<span style=\"font-size: 15;\">\n\t\tSCORE \n\t\t<b style=\"font-size: 25;\">00000</b>\n\t</span>\n</html>");
         rootPanel.add(scoreLabel, new GridConstraints(3, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, null, new Dimension(145, 31), null, 0, false));
         final Spacer spacer1 = new Spacer();
         rootPanel.add(spacer1, new GridConstraints(4, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_VERTICAL, 1, GridConstraints.SIZEPOLICY_WANT_GROW, null, new Dimension(145, 14), null, 0, false));
@@ -218,10 +213,10 @@ public class SwingGameplayForm implements SwingPage, Observer<GameplayContext> {
 
         for (int i = 0; i < context.nextBlock().height(); i++) {
             for (int j = 0; j < context.nextBlock().width(); j++) {
-                if(i >= nextPreviewGamePanel.getHeight() || j >= nextPreviewGamePanel.getWidth()){
+                if (i >= nextPreviewGamePanel.getHeight() || j >= nextPreviewGamePanel.getWidth()) {
                     continue;
                 }
-                if(context.nextBlock().form()[i][j]){
+                if (context.nextBlock().form()[i][j]) {
                     nextPreviewGamePanel.setCellColor(i, j, context.nextBlock().color());
                 }
             }

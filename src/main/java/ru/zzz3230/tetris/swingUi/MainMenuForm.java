@@ -28,7 +28,7 @@ public class MainMenuForm implements SwingPage, Observer<MainMenuContext> {
     private JButton playButton;
     private JButton exitButton;
     private JPanel rootPanel;
-    private JButton button1;
+    private JButton leaderboardButton;
     private JLabel loginStatus;
     private JLabel avatar;
 
@@ -40,10 +40,10 @@ public class MainMenuForm implements SwingPage, Observer<MainMenuContext> {
         });
 
         exitButton.addActionListener(e -> {
-
+            System.exit(0);
         });
 
-        button1.addActionListener(e -> {
+        leaderboardButton.addActionListener(e -> {
             controller.showLeaderboard();
         });
     }
@@ -125,21 +125,18 @@ public class MainMenuForm implements SwingPage, Observer<MainMenuContext> {
         gbc.fill = GridBagConstraints.BOTH;
         rootPanel.add(panel2, gbc);
         final JPanel panel3 = new JPanel();
-        panel3.setLayout(new GridLayoutManager(5, 2, new Insets(0, 10, 0, 0), -1, -1));
+        panel3.setLayout(new GridLayoutManager(4, 2, new Insets(0, 10, 0, 0), -1, -1));
         panel2.add(panel3, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, null, new Dimension(365, 89), null, 0, false));
         playButton = new JButton();
         playButton.setText("Play");
         panel3.add(playButton, new GridConstraints(1, 0, 1, 2, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         exitButton = new JButton();
         exitButton.setText("Exit");
-        panel3.add(exitButton, new GridConstraints(3, 0, 1, 2, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        panel3.add(exitButton, new GridConstraints(2, 0, 1, 2, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         final Spacer spacer1 = new Spacer();
         panel3.add(spacer1, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_VERTICAL, 1, GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
         final Spacer spacer2 = new Spacer();
-        panel3.add(spacer2, new GridConstraints(4, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_VERTICAL, 1, GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
-        final JButton button2 = new JButton();
-        button2.setText("Settings");
-        panel3.add(button2, new GridConstraints(2, 0, 1, 2, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        panel3.add(spacer2, new GridConstraints(3, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_VERTICAL, 1, GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
         final Spacer spacer3 = new Spacer();
         panel2.add(spacer3, new GridConstraints(0, 1, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, 1, null, null, null, 0, false));
         final JPanel panel4 = new JPanel();
@@ -162,15 +159,15 @@ public class MainMenuForm implements SwingPage, Observer<MainMenuContext> {
         final JPanel panel5 = new JPanel();
         panel5.setLayout(new GridLayoutManager(1, 1, new Insets(10, 10, 0, 10), -1, -1));
         panel4.add(panel5, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_EAST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, null, null, null, 0, false));
-        button1 = new JButton();
-        button1.setEnabled(true);
-        button1.setHideActionText(false);
-        button1.setHorizontalAlignment(4);
-        button1.setHorizontalTextPosition(2);
-        button1.setIcon(new ImageIcon(getClass().getResource("/icons/cup.png")));
-        button1.setIconTextGap(0);
-        button1.setText("");
-        panel5.add(button1, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_NORTHEAST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_WANT_GROW, new Dimension(60, 60), new Dimension(60, 60), new Dimension(60, 60), 0, false));
+        leaderboardButton = new JButton();
+        leaderboardButton.setEnabled(true);
+        leaderboardButton.setHideActionText(false);
+        leaderboardButton.setHorizontalAlignment(4);
+        leaderboardButton.setHorizontalTextPosition(2);
+        leaderboardButton.setIcon(new ImageIcon(getClass().getResource("/icons/cup.png")));
+        leaderboardButton.setIconTextGap(0);
+        leaderboardButton.setText("");
+        panel5.add(leaderboardButton, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_NORTHEAST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_WANT_GROW, new Dimension(60, 60), new Dimension(60, 60), new Dimension(60, 60), 0, false));
         final JPanel panel6 = new JPanel();
         panel6.setLayout(new GridLayoutManager(1, 2, new Insets(10, 10, 10, 10), -1, -1));
         panel4.add(panel6, new GridConstraints(0, 4, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, null, null, null, 0, false));
